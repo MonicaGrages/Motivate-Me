@@ -102,6 +102,18 @@ function uiRouterSetup($stateProvider, $urlRouterProvider) {
 "use strict";
 
 
+var controller = __webpack_require__(11);
+var template = __webpack_require__(10);
+//require the files containing the controller and view for this component
+
+var component = {
+  controller: controller,
+  template: template
+};
+
+//tell the app about this component
+angular.module('MotivateMeApp').component('exercise', component);
+
 /***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -33533,6 +33545,19 @@ $provide.value("$locale", {
 
 __webpack_require__(8);
 module.exports = angular;
+
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports) {
+
+module.exports = "<h1>Exercise Motivation</h1>\n\n<ul>\n  <li ng-repeat=''>\n  </li>\n</ul>\n\n\n<button>Add a new exercise post</button>\n";
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 
 
 /***/ })
