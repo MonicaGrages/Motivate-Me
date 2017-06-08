@@ -1,1 +1,21 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Motivate Me</title>
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+<!--   this is the only script tag we should need-->
+  <script src="js/app.bundle.js"></script>
+</head>
+<body ng-app="MotivateMeApp">
+  <nav>
+    <ul>
+      <li ui-sref="quotes">Home</li>
+      <li ui-sref="exercise">Exercise Motivation</li>
+      <li ui-sref="food">Meal Motivation</li>
+    </ul>
+  </nav>
+
+    <ui-view></ui-view>
+
+</body>
+</html>
