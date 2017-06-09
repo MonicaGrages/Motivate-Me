@@ -13,6 +13,6 @@ angular
     // self.deleteExercise = deleteExercise;
 
     function getAllExercises(){
-      console.log('Get all exercises!');
+      console.log('service');
     }
   }
