@@ -17,7 +17,6 @@ angular
     }
 
     function addExercise (newExercise) {
-      console.log('add exercise in service');
       return $http.post('/exercise', newExercise);
     }
   }

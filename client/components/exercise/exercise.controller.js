@@ -4,7 +4,6 @@ ExerciseController.$inject = ['ExerciseService'];
 //exercise controllers
 function ExerciseController(ExerciseService) {
   let vm = this;
-  vm.message = "hello";
   vm.savedExercises = [];
 
   vm.getAllExercises = function () {
