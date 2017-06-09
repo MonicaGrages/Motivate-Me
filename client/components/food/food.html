@@ -1,0 +1,30 @@
+<h1>Food Motivation</h1>
+
+
+<ul>
+  <a ui-sref="showFood({foodId: food._id})">
+    <li ng-repeat='food in $ctrl.savedFoods'>
+      <span>Author: {{food.author}}</span><br>
+      <span>Description: {{food.description}}</span><br>
+      <span>Meal: {{food.meal}}</span><br>
+      <span>Feeling: {{food.feeling}}</span><br>
+    </li>
+  </a>
+</ul>
+
+<button ng-click='$ctrl.addingNew=true'>Add a new food post</button>
+
+<form ng-if="$ctrl.addingNew" ng-submit="$ctrl.addFood()">
+      <div>
+        <label for="newFood-author">Author:</label>
+        <input type="text" id="newFood-Author" ng-model="$ctrl.newFood.author" placeholder="your name">
+      </div>
+      <div>
+        <label for="newFood-description">Location:</label>
+        <input type="text" id="newCriminal-location" ng-model="criminalsCtrl.newCriminal.location" placeholder="Reichenbach Falls, CH">
+      </div>
+      <div>
+        <input type="submit" value="Submit">
+        <button ng-click="$ctrl.addingNew=false">Nevermind</button>
+      </div>
+    </form>

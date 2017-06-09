@@ -13,6 +13,7 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 //require the backend router in exercise.js
 var exercise = require('./routes/exercise');
+var food = require('./routes/food');
 
 var app = express();
 
@@ -32,6 +33,7 @@ app.use('/', index);
 app.use('/users', users);
 //when url is /exercise, use the backend router in exercise.js
 app.use('/exercise', exercise);
+app.use('/food', food);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
