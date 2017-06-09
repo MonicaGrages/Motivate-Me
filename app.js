@@ -11,6 +11,8 @@ mongoose.connect(process.env.MONGODB_URI);
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+//require the backend router in exercise.js
+var exercise = require('./routes/exercise.js');
 
 var app = express();
 
@@ -28,6 +30,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+//when url is /exercise, use the backend router in exercise.js
+app.use('/exercise', exercise);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
