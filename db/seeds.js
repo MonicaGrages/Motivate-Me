@@ -3,7 +3,6 @@ var mongoose = require('mongoose');
 //require the schema for our resources
 var Exercise = require('./schema.js');
 
-
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/project_3');
 
