@@ -7,12 +7,12 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var mongoose = require('mongoose');
-mongoose.connect(process.env.MONGODB_URI);
+mongoose.connect('mongodb://localhost/project_3' || process.env.MONGODB_URI);
 
 var index = require('./routes/index');
 var users = require('./routes/users');
 //require the backend router in exercise.js
-var exercise = require('./routes/exercise.js');
+var exercise = require('./routes/exercise');
 
 var app = express();
 

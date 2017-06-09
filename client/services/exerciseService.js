@@ -14,8 +14,7 @@ angular
 
     function getAllExercises(){
       console.log('service');
-      let savedExercises = $http
-        .get('/exercise');
-        return savedExercises;
+      console.log($http.get('/exercise'));
+      return $http.get('/exercise');
     }
   }

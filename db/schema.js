@@ -1,8 +1,11 @@
 var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 
-// mongoose.Promise = global.Promise;
+mongoose.Promise = global.Promise;
 
-var ExerciseSchema = mongoose.Schema({
+
+
+var ExerciseSchema = new Schema({
   description: String,
   duration: String,
   author: String,

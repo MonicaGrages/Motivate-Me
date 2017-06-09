@@ -5,7 +5,7 @@ var Exercise = require('./schema.js');
 
 
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/project_3');
+mongoose.connect('mongodb://localhost/project_3' || process.env.MONGODB_URI );
 
 //creating some seeds for our exercise posts
 var exercises = [
