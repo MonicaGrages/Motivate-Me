@@ -20,7 +20,7 @@ function ExerciseController(ExerciseService) {
       .then(function(response) {
         console.log(vm.newExercise);
         console.log(response.data)
-        vm.savedExercises.push(response.data);
+        vm.savedExercises.push(response.data.exercise);
         vm.newExercise = {};
       })
   }

@@ -20,8 +20,16 @@
         <input type="text" id="newExercise-Author" ng-model="$ctrl.newExercise.author" placeholder="your name">
       </div>
       <div>
-        <label for="newExercise-description">Location:</label>
-        <input type="text" id="newCriminal-location" ng-model="criminalsCtrl.newCriminal.location" placeholder="Reichenbach Falls, CH">
+        <label for="newExercise-description">Description:</label>
+        <input type="text" id="newExercise-description" ng-model="$ctrl.newExercise.description" placeholder="e.g.: Walked a mile!">
+      </div>
+      <div>
+        <label for="newExercise-duration">Duration:</label>
+        <input type="text" id="newExercise-duration" ng-model="$ctrl.newExercise.duration" placeholder="e.g.: 30 minutes">
+      </div>
+      <div>
+        <label for="newExercise-feeling">Feeling:</label>
+        <input type="text" id="newExercise-feeling" ng-model="$ctrl.newExercise.feeling" placeholder="How were you feeling afterwards?">
       </div>
       <div>
         <input type="submit" value="Submit">
