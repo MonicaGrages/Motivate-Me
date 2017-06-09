@@ -1,5 +1,7 @@
 var mongoose = require('mongoose');
 
+// mongoose.Promise = global.Promise;
+
 var ExerciseSchema = mongoose.Schema({
   description: String,
   duration: String,
@@ -19,3 +21,4 @@ ExerciseSchema.pre('save', function(next) {
 
 
 module.exports = mongoose.model('Exercise', ExerciseSchema);
+//this is referring to the collection name, which will be the lowercase plural form of what we enter as the first argument here.
