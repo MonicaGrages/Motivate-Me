@@ -1,7 +1,6 @@
 <h1>Exercise Motivation</h1>
 
 
-
 <ul>
   <a ui-sref="showExercise({exerciseId: exercise._id})">
     <li ng-repeat='exercise in $ctrl.savedExercises'>
@@ -12,26 +11,17 @@
     </li>
   </a>
 </ul>
+
 <button ng-click='$ctrl.addingNew=true'>Add a new exercise post</button>
+
 <form ng-if="$ctrl.addingNew" ng-submit="$ctrl.addExercise()">
       <div>
-        <label for="newCriminal-name">Name:</label>
-        <input type="text" id="newCriminal-name" ng-model="criminalsCtrl.newCriminal.name" placeholder="Prof. Moriarty">
+        <label for="newExercise-author">Author:</label>
+        <input type="text" id="newExercise-Author" ng-model="$ctrl.newExercise.author" placeholder="your name">
       </div>
       <div>
-        <label for="newCriminal-location">Location:</label>
+        <label for="newExercise-description">Location:</label>
         <input type="text" id="newCriminal-location" ng-model="criminalsCtrl.newCriminal.location" placeholder="Reichenbach Falls, CH">
-      </div>
-      <div>
-        <label for="newCriminal-status">Status:</label>
-
-        <!-- ADD ng-model to the select tag -->
-        <select id="newCriminal-status" ng-model="criminalsCtrl.newCriminal.status">
-          <option value="" disabled>- - Please Select One - -</option>
-          <option value="Alive">Alive</option>
-          <option value="Dead">Dead</option>
-          <option value="Unknown" selected>Unknown</option>
-        </select>
       </div>
       <div>
         <input type="submit" value="Submit">
