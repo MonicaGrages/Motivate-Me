@@ -9,12 +9,15 @@ angular
     const self = this;
     self.getAllExercises = getAllExercises;
     // self.getSavedExercise = getSavedExercise;
-    // self.savedExercise = saveExercise;
+    self.addExercise=addExercise;
     // self.deleteExercise = deleteExercise;
 
     function getAllExercises(){
-      console.log('service');
-      console.log($http.get('/exercise'));
       return $http.get('/exercise');
+    }
+
+    function addExercise (newExercise) {
+      console.log('add exercise in service');
+      return $http.post('/exercise', newExercise);
     }
   }
