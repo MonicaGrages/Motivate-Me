@@ -5,5 +5,10 @@
   </li>
 </ul>
 
-{{ $ctrl.message }}
+<p ng-repeat='exercise in $ctrl.savedExercises'>
+  {{exercise.author}}
+  {{exercise.description}}
+  {{exercise.duration}}
+  {{exercise.feeling}}
+</p>
 <button>Add a new exercise post</button>

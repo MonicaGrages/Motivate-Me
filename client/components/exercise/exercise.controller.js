@@ -5,13 +5,14 @@ ExerciseController.$inject = ['ExerciseService'];
 function ExerciseController(ExerciseService) {
   let vm = this;
   vm.message = "hello";
-  console.log(ExerciseService);
+  vm.savedExercises = [];
 
 
   vm.getAllExercises = function () {
     ExerciseService.getAllExercises()
       .then(function (response) {
-        console.log(response);
+        console.log(response.data.exercises);
+        vm.savedExercises = response.data.exercises;
       })
     }
   vm.getAllExercises();
