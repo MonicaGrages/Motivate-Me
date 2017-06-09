@@ -15,7 +15,6 @@ router.get('/', function(request, response) {
 });
 
 router.post('/', function(request, response) {
-  console.log('backend post');
   var exercise = new Exercise(request.body);
   exercise.save(function(error) {
     if(error) {

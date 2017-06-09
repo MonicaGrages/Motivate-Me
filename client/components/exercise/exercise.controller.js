@@ -17,8 +17,6 @@ function ExerciseController(ExerciseService) {
   vm.addExercise = function() {
     ExerciseService.addExercise(vm.newExercise)
       .then(function(response) {
-        console.log(vm.newExercise);
-        console.log(response.data)
         vm.savedExercises.push(response.data.exercise);
         vm.newExercise = {};
       })
