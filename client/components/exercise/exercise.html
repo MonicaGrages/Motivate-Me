@@ -1,14 +1,17 @@
 <h1>Exercise Motivation</h1>
 
-<ul>
-  <li>hello
-  </li>
-</ul>
 
-<p ng-repeat='exercise in $ctrl.savedExercises'>
-  {{exercise.author}}
-  {{exercise.description}}
-  {{exercise.duration}}
-  {{exercise.feeling}}
-</p>
-<button>Add a new exercise post</button>
+
+<ul>
+  <a ui-sref="showExercise({exerciseId: exercise._id})">
+    <li ng-repeat='exercise in $ctrl.savedExercises'>
+        <span>Author: {{exercise.author}}</span>
+        <span>Description: {{exercise.description}}</span>
+        <span>Duration: {{exercise.duration}}</span>
+        <span>Feeling: {{exercise.feeling}}</span>
+
+    </li>
+  </a>
+</ul>
+<button ng-click='$ctrl'>Add a new exercise post</button>
+
