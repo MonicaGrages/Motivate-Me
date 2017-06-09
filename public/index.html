@@ -7,13 +7,11 @@
   <script src="js/app.bundle.js"></script>
 </head>
 <body ng-app="MotivateMeApp">
-  <h1>Motivate Me</h1>
+<!--   <h1>Motivate Me</h1> -->
+  <a class='getMotivatedLink' ui-sref="quotes">Get Motivated</a>
   <nav>
-    <ul>
-      <li ui-sref="quotes">Home</li>
-      <li ui-sref="exercise">Exercise Motivation</li>
-      <li ui-sref="food">Meal Motivation</li>
-    </ul>
+      <a ui-sref="exercise">Exercise Motivation</a>
+      <a ui-sref="food">Meal Motivation</a>
   </nav>
 
     <ui-view></ui-view>
