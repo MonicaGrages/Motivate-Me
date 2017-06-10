@@ -8,16 +8,18 @@ angular
    function ExerciseService ($http){
     const self = this;
     self.getAllExercises = getAllExercises;
-    // self.getSavedExercise = getSavedExercise;
-    self.addExercise=addExercise;
-    // self.deleteExercise = deleteExercise;
+    self.addExercise = addExercise;
+    self.exerciseShow = exerciseShow;
 
     function getAllExercises(){
       return $http.get('/exercise');
     }
 
     function addExercise (newExercise) {
-      console.log('add exercise in service');
       return $http.post('/exercise', newExercise);
+    }
+
+    function exerciseShow(id) {
+      return $http.get('/exercise/'+id);
     }
   }

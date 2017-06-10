@@ -10,7 +10,6 @@ function FoodController(FoodService) {
   vm.getAllFoods = function () {
     FoodService.getAllFoods()
       .then(function (response) {
-        console.log(response);
         vm.savedFoods = response.data.food;
       })
     }
@@ -20,8 +19,8 @@ function FoodController(FoodService) {
     FoodService.addFood(vm.newFood)
       .then(function(response) {
         console.log(vm.newFood);
-        console.log(response.data)
-        vm.savedFoods.push(response.data);
+        console.log(response.data.food);
+        vm.savedFoods.push(response.data.food);
         vm.newFood = {};
       })
   }

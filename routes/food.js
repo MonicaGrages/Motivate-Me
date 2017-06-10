@@ -15,7 +15,6 @@ router.get('/', function(request, response) {
 });
 
 router.post('/', function(request, response) {
-  console.log('backend post');
   var food = new Food(request.body);
   food.save(function(error) {
     if(error) {

@@ -16,7 +16,6 @@ angular
     }
 
     function addFood (newFood) {
-      console.log('add food in service');
       return $http.post('/food', newFood);
     }
   }

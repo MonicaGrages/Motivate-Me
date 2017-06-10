@@ -14,8 +14,18 @@ router.get('/', function(request, response) {
   })
 });
 
+router.get('/:exerciseId', function(request, response) {
+  var exerciseId = request.params.exerciseId;
+  Exercise.findById(exerciseId, function (error, exerciseToShow) {
+    if(error) {
+      console.log('error finding exercise '+exerciseId+': '+error);
+      return;
+    }
+    response.send(exerciseToShow);
+  })
+})
+
 router.post('/', function(request, response) {
-  console.log('backend post');
   var exercise = new Exercise(request.body);
   exercise.save(function(error) {
     if(error) {
