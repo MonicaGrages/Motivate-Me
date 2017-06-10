@@ -11,6 +11,7 @@ angular
     self.addFood = addFood;
     self.foodShow = foodShow;
     self.editFood = editFood;
+    self.deleteFood = deleteFood;
 
 
     function getAllFoods(){
@@ -26,5 +27,8 @@ angular
     }
     function editFood(foodToEdit) {
       return $http.patch('/food', foodToEdit);
+    }
+    function deleteFood (foodIdToDelete) {
+      return $http.delete('/food/' + foodIdToDelete);
     }
   }

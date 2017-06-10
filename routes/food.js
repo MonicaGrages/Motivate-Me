@@ -51,8 +51,16 @@ router.patch('/', function(request, response) {
   });
 });
 
+router.delete('/:id', function (request, response) {
+  const foodIdToDelete = request.params.id;
 
-
-
+  Food.findByIdAndRemove(foodIdToDelete).exec (function (error) {
+    if (error) {
+      console.log('error while deleteing food: '+error);
+      return;
+    }
+    response.send(200);
+  })
+});
 
 module.exports = router;

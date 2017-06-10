@@ -24,6 +24,14 @@ function FoodShowController($state, $stateParams, FoodService) {
       })
       vm.editingPost = false;
   }
+
+  vm.deleteFood = function (foodIdToDelete) {
+    FoodService.deleteFood(foodIdToDelete)
+      .then(function (response) {
+        console.log(response);
+        $state.go('food');
+      })
+  }
 }
 
 module.exports = FoodShowController;
