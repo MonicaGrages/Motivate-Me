@@ -14,6 +14,15 @@ function ExerciseShowController($state, $stateParams, ExerciseService) {
   }
   vm.exerciseShow();
 
+  vm.editExercise = function () {
+    vm.exerciseToEdit = vm.exerciseToShow;
+    ExerciseService.editExercise(vm.exerciseToEdit)
+      .then(function(response) {
+        vm.editedExercise = response.data;
+        console.log(vm.editedExercise);
+      })
+  }
+
 }
 
 module.exports = ExerciseShowController;

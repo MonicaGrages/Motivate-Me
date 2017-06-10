@@ -37,4 +37,19 @@ router.post('/', function(request, response) {
 })
 
 
+router.patch('/', function(request, response) {
+  let exerciseToEdit = request.body;
+  console.log(exerciseToEdit);
+  Exercise.findByIdAndUpdate(exerciseToEdit._id, exerciseToEdit, {new: true})
+  .exec(function(error, updatedExercise) {
+    if(error){
+      console.log('error while updating exercise: '+error);
+      return;
+    }
+    response.send(200);
+    console.log(updatedExercise);
+  })
+})
+
+
 module.exports = router;

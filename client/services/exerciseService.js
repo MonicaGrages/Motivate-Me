@@ -10,6 +10,7 @@ angular
     self.getAllExercises = getAllExercises;
     self.addExercise = addExercise;
     self.exerciseShow = exerciseShow;
+    self.editExercise = editExercise;
 
     function getAllExercises(){
       return $http.get('/exercise');
@@ -21,5 +22,9 @@ angular
 
     function exerciseShow(id) {
       return $http.get('/exercise/'+id);
+    }
+
+    function editExercise(exerciseToEdit) {
+      return $http.patch('/exercise', exerciseToEdit);
     }
   }

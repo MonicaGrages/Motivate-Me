@@ -1,8 +1,6 @@
-<h1>Show Page</h1>
-
-Exercise Motivation from {{$ctrl.exerciseToShow.author}}
+<h1>Exercise Motivation from {{$ctrl.exerciseToShow.author}}</h1>
 <div>
-  Description: {{ $ctrl.exerciseToShow.description }}
+  <h4>{{ $ctrl.exerciseToShow.description }}</h4>
   <br />
   Duration: {{ $ctrl.exerciseToShow.duration }}
   <br />
@@ -12,22 +10,22 @@ Exercise Motivation from {{$ctrl.exerciseToShow.author}}
 
 <button ng-click='$ctrl.editingPost=true'>Edit this post</button>
 <br><br>
-<form ng-if="$ctrl.editingPost" ng-submit="$ctrl.editExercise()">
+<form ng-if="$ctrl.editingPost" ng-submit="$ctrl.editExercise($ctrl.exerciseToEdit._id)">
       <div>
-        <label for="newExercise-author">Author:</label>
-        <input type="text" id="newExercise-Author" ng-model="$ctrl.newExercise.author" placeholder="your name">
+        <label for="exerciseToEdit-author">Author:</label>
+        <input type="text" id="exerciseToEdit-Author" ng-model="$ctrl.exerciseToEdit.author">
       </div>
       <div>
-        <label for="newExercise-description">Description:</label>
-        <input type="text" id="newExercise-description" ng-model="$ctrl.newExercise.description" placeholder="e.g.: Walked a mile!">
+        <label for="exerciseToEdit-description">Description:</label>
+        <input type="text" id="exerciseToEdit-description" ng-model="$ctrl.exerciseToEdit.description">
       </div>
       <div>
-        <label for="newExercise-duration">Duration:</label>
-        <input type="text" id="newExercise-duration" ng-model="$ctrl.newExercise.duration" placeholder="e.g.: 30 minutes">
+        <label for="exerciseToEdit-duration">Duration:</label>
+        <input type="text" id="exerciseToEdit-duration" ng-model="$ctrl.exerciseToEdit.duration">
       </div>
       <div>
-        <label for="newExercise-feeling">Feeling:</label>
-        <input type="text" id="newExercise-feeling" ng-model="$ctrl.newExercise.feeling" placeholder="How were you feeling afterwards?">
+        <label for="exerciseToEdit-feeling">Feeling:</label>
+        <input type="text" id="exerciseToEdit-feeling" ng-model="$ctrl.exerciseToEdit.feeling">
       </div>
       <div>
         <input type="submit" value="Submit">
