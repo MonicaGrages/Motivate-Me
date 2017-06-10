@@ -23,7 +23,6 @@ function ExerciseController($state, ExerciseService) {
   }
 
   vm.exerciseShow = function (exerciseId) {
-    console.log('state.go');
     $state.go('exerciseShow/:exerciseId', { exerciseId: exerciseId });
   }
 

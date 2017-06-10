@@ -20,7 +20,6 @@ angular
     }
 
     function exerciseShow(id) {
-      console.log('hello');
       return $http.get('/exercise/'+id);
     }
   }
