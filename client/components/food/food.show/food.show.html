@@ -1,11 +1,34 @@
-<h1>Show Page</h1>
-
-<h1>Meal Motivation from {{$ctrl.foodToShow.author}}</h1>
+<h1>Food Motivation from {{$ctrl.foodToShow.author}}</h1>
 <div>
-  <h4>Description: {{ $ctrl.foodToShow.description }}</h4>
+  <h4>{{ $ctrl.foodToShow.description }}</h4>
   <br />
-  Meal: {{ $ctrl.foodToShow.meal }}
+  Duration: {{ $ctrl.foodToShow.duration }}
   <br />
   Feeling: {{ $ctrl.foodToShow.feeling }}
   <br />
 </div>
+
+<button ng-click='$ctrl.editingPost=true'>Edit this post</button>
+<br><br>
+<form ng-if="$ctrl.editingPost" ng-submit="$ctrl.editFood($ctrl.foodToEdit._id)">
+      <div>
+        <label for="foodToEdit-author">Author:</label>
+        <input type="text" id="foodToEdit-Author" ng-model="$ctrl.foodToShow.author">
+      </div>
+      <div>
+        <label for="foodToEdit-description">Description:</label>
+        <input type="text" id="foodToEdit-description" ng-model="$ctrl.foodToShow.description">
+      </div>
+      <div>
+        <label for="foodToEdit-meal">Meal:</label>
+        <input type="text" id="foodToEdit-meal" ng-model="$ctrl.foodToShow.meal">
+      </div>
+      <div>
+        <label for="foodToEdit-feeling">Feeling:</label>
+        <input type="text" id="foodToEdit-feeling" ng-model="$ctrl.foodToShow.feeling">
+      </div>
+      <div>
+        <input  ng-click="$ctrl.editingPost=false" type="submit" value="Submit">
+        <button ng-click="$ctrl.editingPost=false">Nevermind</button>
+      </div>
+    food
