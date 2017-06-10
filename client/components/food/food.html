@@ -5,9 +5,10 @@
   <a ui-sref="showFood({foodId: food._id})">
     <li ng-repeat='food in $ctrl.savedFoods'>
       <span>Author: {{food.author}}</span><br>
-      <span>Description: {{food.description}}</span><br>
+      <button ng-click="$ctrl.foodShow(food._id)">Description: {{food.description}}</button><br>
       <span>Meal: {{food.meal}}</span><br>
       <span>Feeling: {{food.feeling}}</span><br>
+
     </li>
   </a>
 </ul>

@@ -23,7 +23,23 @@ router.post('/', function(request, response) {
     }
     response.json({food: food});
   })
-})
+});
+
+router.get('/:foodId', function (request, response) {
+  const foodId = request.params.foodId;
+
+  Food.findById(foodId, function (error, foodToShow) {
+    if (error) {
+      console.log('Error finding food ' +foodId+' : '+error);
+      return;
+    }
+    response.send(foodToShow);
+  });
+});
+
+
+
+
 
 
 module.exports = router;

@@ -26,6 +26,11 @@ function uiRouterSetup($stateProvider, $urlRouterProvider) {
       url: '/exerciseShow/:exerciseId',
       params: ['exerciseId'],
       template: '<exercise-show></exercise-show>'
+    })
+    .state('foodShow/:foodId', {
+      url: '/foodShow/:foodId',
+      params: ['foodId'],
+      template: '<food-show></food-show>'
     });
 
   // $urlRouterProvider.otherwise('/');

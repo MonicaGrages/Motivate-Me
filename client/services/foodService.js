@@ -8,7 +8,8 @@ angular
    function FoodService ($http){
     const self = this;
     self.getAllFoods = getAllFoods;
-    self.addFood=addFood;
+    self.addFood = addFood;
+    self.foodShow = foodShow;
 
 
     function getAllFoods(){
@@ -17,5 +18,9 @@ angular
 
     function addFood (newFood) {
       return $http.post('/food', newFood);
+    }
+
+    function foodShow (id) {
+      return $http.get('/food/'+id);
     }
   }
