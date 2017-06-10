@@ -8,9 +8,8 @@ angular
    function ExerciseService ($http){
     const self = this;
     self.getAllExercises = getAllExercises;
-    // self.getSavedExercise = getSavedExercise;
-    self.addExercise=addExercise;
-    // self.deleteExercise = deleteExercise;
+    self.addExercise = addExercise;
+    self.exerciseShow = exerciseShow;
 
     function getAllExercises(){
       return $http.get('/exercise');
@@ -18,5 +17,10 @@ angular
 
     function addExercise (newExercise) {
       return $http.post('/exercise', newExercise);
+    }
+
+    function exerciseShow(id) {
+      console.log('hello');
+      return $http.get('/exercise/'+id);
     }
   }

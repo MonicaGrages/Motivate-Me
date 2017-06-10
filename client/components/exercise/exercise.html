@@ -2,14 +2,13 @@
 
 
 <ul>
-  <a ui-sref="showExercise({exerciseId: exercise._id})">
     <li ng-repeat='exercise in $ctrl.savedExercises'>
       <span>Author: {{exercise.author}}</span><br>
-      <span>Description: {{exercise.description}}</span><br>
+      <button ng-click="$ctrl.exerciseShow(exercise._id)">Description: {{exercise.description}}</button><br>
       <span>Duration: {{exercise.duration}}</span><br>
       <span>Feeling: {{exercise.feeling}}</span><br>
     </li>
-  </a>
+
 </ul>
 
 <button ng-click='$ctrl.addingNew=true'>Add a new exercise post</button>

@@ -1,8 +1,8 @@
-ExerciseController.$inject = ['ExerciseService'];
+ExerciseController.$inject = ['$state', 'ExerciseService'];
 
 
 //exercise controllers
-function ExerciseController(ExerciseService) {
+function ExerciseController($state, ExerciseService) {
   let vm = this;
   vm.savedExercises = [];
 
@@ -22,11 +22,9 @@ function ExerciseController(ExerciseService) {
       })
   }
 
-  vm.getOneExercise = function () {
-    ExerciseService.getOneExercise()
-      .then(function (response) {
-        vm.exerciseToShow =
-      })
+  vm.exerciseShow = function (exerciseId) {
+    console.log('state.go');
+    $state.go('exerciseShow/:exerciseId', { exerciseId: exerciseId });
   }
 
 
