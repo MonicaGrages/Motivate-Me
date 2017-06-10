@@ -11,6 +11,7 @@ angular
     self.addExercise = addExercise;
     self.exerciseShow = exerciseShow;
     self.editExercise = editExercise;
+    self.deleteExercise = deleteExercise;
 
     function getAllExercises(){
       return $http.get('/exercise');
@@ -26,5 +27,9 @@ angular
 
     function editExercise(exerciseToEdit) {
       return $http.patch('/exercise', exerciseToEdit);
+    }
+
+    function deleteExercise (exerciseIdToDelete) {
+      return $http.delete('/exercise/' + exerciseIdToDelete);
     }
   }

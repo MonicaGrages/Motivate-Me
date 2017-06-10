@@ -25,7 +25,6 @@ angular
       return $http.get('/food/'+id);
     }
     function editFood(foodToEdit) {
-      console.log('foodedit');
       return $http.patch('/food', foodToEdit);
     }
   }

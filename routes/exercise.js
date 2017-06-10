@@ -51,5 +51,17 @@ router.patch('/', function(request, response) {
   })
 })
 
+router.delete('/:id', function (request, response) {
+  const exerciseIdToDelete = request.params.id;
+
+  Exercise.findByIdAndRemove(exerciseIdToDelete).exec (function (error) {
+    if (error) {
+      console.log('error while deleteing exercise: '+error);
+      return;
+    }
+    response.send(200);
+  })
+});
+
 
 module.exports = router;

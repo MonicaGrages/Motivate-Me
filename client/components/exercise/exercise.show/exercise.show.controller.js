@@ -19,11 +19,17 @@ function ExerciseShowController($state, $stateParams, ExerciseService) {
     ExerciseService.editExercise(vm.exerciseToEdit)
       .then(function(response) {
         vm.editedExercise = response.data;
-        console.log(vm.editedExercise);
       })
       vm.editingPost = false;
   }
 
+vm.deleteExercise = function (exerciseIdToDelete) {
+    ExerciseService.deleteExercise(exerciseIdToDelete)
+      .then(function (response) {
+        console.log(response);
+        $state.go('exercise');
+      })
+  }
 }
 
 module.exports = ExerciseShowController;
