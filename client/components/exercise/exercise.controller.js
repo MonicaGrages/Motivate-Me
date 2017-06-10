@@ -22,6 +22,12 @@ function ExerciseController(ExerciseService) {
       })
   }
 
+  vm.getOneExercise = function () {
+    ExerciseService.getOneExercise()
+      .then(function (response) {
+        vm.exerciseToShow =
+      })
+  }
 
 
 }
