@@ -9,7 +9,8 @@ function ExerciseShowController($state, $stateParams, ExerciseService) {
     let exerciseId = $stateParams.exerciseId;
     ExerciseService.exerciseShow(exerciseId)
       .then(function (response) {
-        vm.exerciseToShow = response.data.exercise;
+        console.log(response);
+        vm.exerciseToShow = response.data;
         console.log(vm.exerciseToShow);
       });
   }
