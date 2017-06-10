@@ -21,6 +21,7 @@ function ExerciseShowController($state, $stateParams, ExerciseService) {
         vm.editedExercise = response.data;
         console.log(vm.editedExercise);
       })
+      vm.editingPost = false;
   }
 
 }

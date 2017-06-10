@@ -10,6 +10,7 @@ angular
     self.getAllFoods = getAllFoods;
     self.addFood = addFood;
     self.foodShow = foodShow;
+    self.editFood = editFood;
 
 
     function getAllFoods(){
@@ -22,5 +23,9 @@ angular
 
     function foodShow (id) {
       return $http.get('/food/'+id);
+    }
+    function editFood(foodToEdit) {
+      console.log('foodedit');
+      return $http.patch('/food', foodToEdit);
     }
   }

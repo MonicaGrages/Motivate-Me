@@ -22,7 +22,7 @@ router.post('/', function(request, response) {
       return;
     }
     response.json({food: food});
-  })
+  });
 });
 
 router.get('/:foodId', function (request, response) {
@@ -37,6 +37,19 @@ router.get('/:foodId', function (request, response) {
   });
 });
 
+router.patch('/', function(request, response) {
+  let foodToEdit = request.body;
+  console.log(foodToEdit);
+  Food.findByIdAndUpdate(foodToEdit._id, foodToEdit, {new: true})
+  .exec(function(error, updatedFood) {
+    if(error){
+      console.log('error while updating food: '+error);
+      return;
+    }
+    response.send(200);
+    console.log(updatedFood);
+  });
+});
 
 
 

@@ -13,6 +13,17 @@ function FoodShowController($state, $stateParams, FoodService) {
       });
   }
   vm.foodShow();
+
+  vm.editFood = function () {
+    console.log('food');
+    vm.foodToEdit = vm.foodToShow;
+    FoodService.editFood(vm.foodToEdit)
+      .then(function(response) {
+        vm.editedFood = response.data;
+        console.log(vm.editedFood);
+      })
+      vm.editingPost = false;
+  }
 }
 
 module.exports = FoodShowController;
