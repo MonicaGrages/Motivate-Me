@@ -23,6 +23,7 @@ function ExerciseController(ExerciseService) {
   }
 
 
+
 }
 
 module.exports = ExerciseController;
