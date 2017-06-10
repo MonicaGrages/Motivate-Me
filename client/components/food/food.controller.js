@@ -1,8 +1,8 @@
-FoodController.$inject = ['FoodService'];
+FoodController.$inject = ['$state', 'FoodService'];
 
 
 //food controllers
-function FoodController(FoodService) {
+function FoodController($state, FoodService) {
   let vm = this;
   vm.message = "food";
   vm.savedFoods = [];
@@ -25,7 +25,9 @@ function FoodController(FoodService) {
       })
   }
 
-
+  vm.foodShow = function (foodId) {
+    $state.go('foodShow/:foodId', { foodId: foodId });
+  }
 }
 
 module.exports = FoodController;

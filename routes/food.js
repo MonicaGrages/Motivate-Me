@@ -26,16 +26,20 @@ router.post('/', function(request, response) {
 });
 
 router.get('/:foodId', function (request, response) {
-  const foodIdToShow = request.params.foodId;
+  const foodId = request.params.foodId;
 
-  Food.findById(foodIdToShow, function (error, foodCredit) {
+  Food.findById(foodId, function (error, foodToShow) {
     if (error) {
-      console.log('Error finding Food with Id of ' + foodIdToShow);
+      console.log('Error finding food ' +foodId+' : '+error);
       return;
     }
-    response.send(foodCredit);
+    response.send(foodToShow);
   });
 });
+
+
+
+
 
 
 module.exports = router;
