@@ -22,7 +22,6 @@ router.get('/:exerciseId', function(request, response) {
       return;
     }
     response.send(exerciseToShow);
-    console.log(exerciseToShow);
   })
 })
 
