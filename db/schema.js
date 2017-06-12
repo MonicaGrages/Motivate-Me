@@ -4,22 +4,23 @@ var Schema = mongoose.Schema;
 mongoose.Promise = global.Promise;
 
 
-
 var ExerciseSchema = new Schema({
-  description: String,
+  description: {type: String, required: true},
   duration: String,
   author: String,
   feeling: String,
-  likes: Number
+  likes: Number,
+  postedAt: Date
 });
 
 //need to fix this
 ExerciseSchema.pre('save', function(next) {
     now = new Date();
-    this.updatedAt = now;
-
-    if( !this.createdAt ) {
-        this.createdAt = now;
+    if( !this.postedAt ) {
+        this.postedAt = now;
+    }
+    if ( !this.likes ) {
+      this.likes = 0;
     }
     next();
 });
