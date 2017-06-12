@@ -9,7 +9,8 @@ var FoodSchema = new Schema({
   description: String,
   meal: String,
   author: String,
-  feeling: String
+  feeling: String,
+  likes: Number
 });
 
 FoodSchema.pre('save', function(next) {

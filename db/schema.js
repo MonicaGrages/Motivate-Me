@@ -13,6 +13,7 @@ var ExerciseSchema = new Schema({
   likes: Number
 });
 
+//need to fix this
 ExerciseSchema.pre('save', function(next) {
     now = new Date();
     this.updatedAt = now;
