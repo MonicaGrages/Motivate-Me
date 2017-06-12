@@ -38,7 +38,7 @@ router.post('/', function(request, response) {
 })
 
 
-router.patch('/', function(request, response) {
+router.put('/', function(request, response) {
   let exerciseToEdit = request.body;
   console.log(exerciseToEdit);
   Exercise.findByIdAndUpdate(exerciseToEdit._id, exerciseToEdit, {new: true})
@@ -63,6 +63,19 @@ router.delete('/:id', function (request, response) {
     response.sendStatus(200);
   })
 });
+
+router.patch('/:exerciseId', function (request, response) {
+  let exerciseId = request.params.exerciseId;
+  let newLikes = request.body;
+  Exercise.findByIdAndUpdate(exerciseId, newLikes, {new : true})
+    .exec(function(error, updatedExercise) {
+      if(error) {
+        console.log('error while liking post: '+exerciseId);
+        return;
+      }
+      response.sendStatus(200);
+    })
+})
 
 
 module.exports = router;

@@ -27,6 +27,13 @@ function ExerciseController($state, ExerciseService) {
     $state.go('exerciseShow/:exerciseId', { exerciseId: exerciseId });
   }
 
+  vm.likePost = function (exerciseToLike) {
+    ExerciseService.likePost(exerciseToLike)
+      .then(function success (response) {
+        exerciseToLike.likes +=1;
+      })
+  }
+
 
 }
 
