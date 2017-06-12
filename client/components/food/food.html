@@ -32,8 +32,8 @@
 
 
 <div class= 'index_page_post_container'>
-  <div class='index_page_post' ng-repeat='food in $ctrl.savedFoods'  ng-click="$ctrl.foodShow(food._id)">
-    <span class='index_page_post_description food_img' >{{food.description}}</span>
+  <div class='index_page_post' ng-repeat='food in $ctrl.savedFoods'>
+    <span class='index_page_post_description food_img' ng-click="$ctrl.foodShow(food._id)">{{food.description}}</span>
     <!-- <span>Meal: {{food.meal}}</span>
     <span>Feeling: {{food.feeling}}</span>
     <span>Author: {{food.author}}</span> -->

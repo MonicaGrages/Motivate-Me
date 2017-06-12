@@ -29,11 +29,12 @@
     </form>
 
 <div class='index_page_post_container'>
-    <div ng-repeat='exercise in $ctrl.savedExercises'  ng-click="$ctrl.exerciseShow(exercise._id)">
-      <span class='index_page_post_description exercise_img'>{{exercise.description}}</span>
+    <div class='index_page_post' ng-repeat='exercise in $ctrl.savedExercises'>
+      <span class='index_page_post_description exercise_img'  ng-click="$ctrl.exerciseShow(exercise._id)">{{exercise.description}}</span>
       <!-- <span>Duration: {{exercise.duration}}</span>
       <span>Feeling: {{exercise.feeling}}</span>
       <span>Author: {{exercise.author}}</span> -->
+      <button class='like_button' ng-click='$ctrl.likePost(exercise._id)'>&#9829;</button><span class='post_likes'>{{exercise.likes}}</span>
     </div>
 </div>
 
