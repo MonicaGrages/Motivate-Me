@@ -1,15 +1,15 @@
-<h1>Food Motivation</h1>
+<h1>Let's Motivate One Another to Eat Healthy</h1>
 
 
-<ul>
-    <li ng-repeat='food in $ctrl.savedFoods'  ng-click="$ctrl.foodShow(food._id)">
-      <span>Description: {{food.description}}</span><br>
-      <span>Meal: {{food.meal}}</span><br>
-      <span>Feeling: {{food.feeling}}</span><br>
-      <span>Author: {{food.author}}</span><br>
-      <br><br>
-    </li>
-</ul>
+  <div class= 'index_page_post_container'>
+    <div class='index_page_post' ng-repeat='food in $ctrl.savedFoods'  ng-click="$ctrl.foodShow(food._id)">
+      <span class='index_page_post_description'>{{food.description}}</span>
+      <span>Meal: {{food.meal}}</span>
+      <span>Feeling: {{food.feeling}}</span>
+      <span>Author: {{food.author}}</span>
+    </div>
+  </div>
+
 
 <button ng-click='$ctrl.addingNew=true'>Add a new food post</button>
 

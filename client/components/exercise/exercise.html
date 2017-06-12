@@ -1,15 +1,14 @@
-<h1>Exercise Motivation</h1>
+<h1>Let's Motivate One Another to Exercise</h1>
 
 
-<ul>
-    <li ng-repeat='exercise in $ctrl.savedExercises'  ng-click="$ctrl.exerciseShow(exercise._id)">
-      <span>Description: {{exercise.description}}</span><br>
-      <span>Duration: {{exercise.duration}}</span><br>
-      <span>Feeling: {{exercise.feeling}}</span><br>
-      <span>Author: {{exercise.author}}</span><br>
-      <br><br>
-    </li>
-</ul>
+<div class='index_page_post_container'>
+    <div class='index_page_post' ng-repeat='exercise in $ctrl.savedExercises'  ng-click="$ctrl.exerciseShow(exercise._id)">
+      <span class='index_page_post_description'>{{exercise.description}}</span>
+      <span>Duration: {{exercise.duration}}</span>
+      <span>Feeling: {{exercise.feeling}}</span>
+      <span>Author: {{exercise.author}}</span>
+    </div>
+</div>
 
 <button ng-click='$ctrl.addingNew=true'>Add a new exercise post</button>
 

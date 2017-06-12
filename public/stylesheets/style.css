@@ -10,3 +10,18 @@ a {
 .getMotivatedLink {
   font-size: 100px;
 }
+
+.index_page_post_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.index_page_post {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.index_page_post_description {
+  font-size: 25px;
+}
