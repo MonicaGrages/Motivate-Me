@@ -13,7 +13,7 @@
 
 #### In version 2, we plan to incorporate:
 * User ability to save/share favorite motivational quotes
-* Post "likes"
+* Add user ability to "like" posts
 * Calorie needs calculator model
 
 #### [Click here to see the Trello board for this project](https://trello.com/b/FKiU5kU0/wdi-project-3)
