@@ -3,7 +3,6 @@ var Schema = mongoose.Schema;
 
 mongoose.Promise = global.Promise;
 
-
 var ExerciseSchema = new Schema({
   description: {type: String, required: true},
   duration: String,
@@ -13,7 +12,7 @@ var ExerciseSchema = new Schema({
   postedAt: Date
 });
 
-//need to fix this
+//add a date posted and number of likes to each post when created
 ExerciseSchema.pre('save', function(next) {
     now = new Date();
     if( !this.postedAt ) {
@@ -24,7 +23,6 @@ ExerciseSchema.pre('save', function(next) {
     }
     next();
 });
-
 
 module.exports = mongoose.model('Exercise', ExerciseSchema);
 //this is referring to the collection name, which will be the lowercase plural form of what we enter as the first argument here.

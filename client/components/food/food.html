@@ -15,8 +15,8 @@
         <input class="box_length" type="text" id="newFood-description" ng-model="$ctrl.newFood.description" placeholder="e.g.: Balsamic tofu" required>
       </div>
       <div>
-        <label for="newFood-meal">Meal:</label>
-        <input class="box_length" type="text" id="newFood-meal" ng-model="$ctrl.newFood.meal" placeholder="e.g.: brunch">
+        <label for="newFood-meal">Meal Prep Time:</label>
+        <input class="box_length" type="text" id="newFood-meal" ng-model="$ctrl.newFood.meal" placeholder="e.g.: 30 minutes">
       </div>
       <div>
         <label for="newFood-feeling">Feeling:</label>
@@ -30,14 +30,14 @@
       </div>
 </form>
 
-
-<div class= 'index_page_post_container'>
-  <div class='index_page_post' ng-repeat='food in $ctrl.savedFoods'>
-    <span class='index_page_post_description food_img' ng-click="$ctrl.foodShow(food._id)">{{food.description}}</span>
-    <!-- <span>Meal: {{food.meal}}</span>
-    <span>Feeling: {{food.feeling}}</span>
-    <span>Author: {{food.author}}</span> -->
-  </div>
+<div class='index_page_post_container'>
+    <div class='index_page_post' ng-repeat="food in $ctrl.savedFoods | orderBy: '-likes'">
+      <span class='index_page_post_description food_img'  ng-click="$ctrl.foodShow(food._id)">{{food.description}}</span>
+      <div class='likes_and_date'>
+        <div class='likes_container'><button class='like_button' ng-click='$ctrl.likePost(food)'>&#9829;</button><span class='post_likes'>+{{food.likes}}</span></div>
+        <p class='posted_date'>{{food.postedAt | date}}</p>
+      </div>
+    </div>
 </div>
 
 

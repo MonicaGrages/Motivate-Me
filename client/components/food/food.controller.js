@@ -29,6 +29,12 @@ function FoodController($state, FoodService) {
     $state.go('foodShow/:foodId', { foodId: foodId });
   }
 
+  vm.likePost = function (foodToLike) {
+    FoodService.likePost(foodToLike)
+      .then(function success (response) {
+        foodToLike.likes +=1;
+      })
+  }
   // vm.likePost = function(foodId) {
   //   FoodService.likePost(foodId).
   //   .then(function(response){

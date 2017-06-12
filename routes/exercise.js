@@ -64,6 +64,7 @@ router.delete('/:id', function (request, response) {
   })
 });
 
+//this is for updating the post when the like button is clicked. I feel like this could have been the same function as the put, but I'm not sure how
 router.patch('/:exerciseId', function (request, response) {
   let exerciseId = request.params.exerciseId;
   let newLikes = request.body;

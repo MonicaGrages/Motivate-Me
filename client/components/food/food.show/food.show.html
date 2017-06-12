@@ -3,7 +3,7 @@
 <div class="show_post_description show_post_food_img">
   <h4>{{ $ctrl.foodToShow.description }}</h4>
   <br/>
-  Meal: {{ $ctrl.foodToShow.meal }}
+  Meal Prep Time: {{ $ctrl.foodToShow.meal }}
   <br/>
   Feeling: {{ $ctrl.foodToShow.feeling }}
   <br/>
@@ -25,8 +25,8 @@
         <input class="box_length"  type="text" id="foodToEdit-description" ng-model="$ctrl.foodToShow.description" required>
       </div>
       <div>
-        <label for="foodToEdit-meal">Meal:</label>
-        <input class="box_length" type="text" id="foodToEdit-meal" ng-model="$ctrl.foodToShow.meal">
+        <label for="foodToEdit-meal">Meal Prep Time:</label>
+        <input lass="box_length" type="text" id="foodToEdit-meal" ng-model="$ctrl.foodToShow.meal">
       </div>
       <div>
         <label for="foodToEdit-feeling">Feeling:</label>
