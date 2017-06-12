@@ -8,23 +8,23 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/project_3');
 //creating some seeds for our food posts
 var foods = [
   {
-    description: "I just walked 3 miles!!",
-    meal: "1 hour",
+    description: "Grilled chicken with pasta and green peas!!",
+    meal: "40 minutes",
     author: "Yeni",
-    feeling: "Energized"
+    feeling: "Fantaboulus"
   },
   {
-    description: "Cycled the beltline",
+    description: "Mahi mahi with asparagus",
     meal: "20 minutes",
     author: "Monica",
-    feeling: "Fast"
+    feeling: "Strong"
   },
   {
-    description: "Climbed Stone Mountain",
-    meal: "90 minutes",
+    description: "Salad with lettuce, red onion, strawberries, and mango ",
+    meal: "5 minutes",
     author: "William",
-    feeling: "On top of the world"
-  }
+    feeling: "Lively"
+  },
 ];
 
 
