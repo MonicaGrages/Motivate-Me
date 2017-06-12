@@ -2,15 +2,13 @@
 
 
 <ul>
-  <a ui-sref="showFood({foodId: food._id})">
-    <li ng-repeat='food in $ctrl.savedFoods'>
-      <span>Author: {{food.author}}</span><br>
-      <button ng-click="$ctrl.foodShow(food._id)">Description: {{food.description}}</button><br>
+    <li ng-repeat='food in $ctrl.savedFoods'  ng-click="$ctrl.foodShow(food._id)">
+      <span>Description: {{food.description}}</span><br>
       <span>Meal: {{food.meal}}</span><br>
       <span>Feeling: {{food.feeling}}</span><br>
-
+      <span>Author: {{food.author}}</span><br>
+      <br><br>
     </li>
-  </a>
 </ul>
 
 <button ng-click='$ctrl.addingNew=true'>Add a new food post</button>
