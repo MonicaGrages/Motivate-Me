@@ -8,19 +8,19 @@
 <form class="new_post_form" ng-if="$ctrl.addingNew" ng-submit="$ctrl.addExercise()">
       <div>
         <label for="newExercise-author">Author:</label>
-        <input type="text" id="newExercise-Author" ng-model="$ctrl.newExercise.author" placeholder="your name">
+        <input class="box_length" type="text" id="newExercise-Author" ng-model="$ctrl.newExercise.author" placeholder="your name">
       </div>
       <div>
         <label for="newExercise-description">Description:</label>
-        <input type="text" id="newExercise-description" ng-model="$ctrl.newExercise.description" placeholder="e.g.: Walked a mile!" required>
+        <input class="box_length" type="text" id="newExercise-description" ng-model="$ctrl.newExercise.description" placeholder="e.g.: Walked a mile!" required>
       </div>
       <div>
         <label for="newExercise-duration">Duration:</label>
-        <input type="text" id="newExercise-duration" ng-model="$ctrl.newExercise.duration" placeholder="e.g.: 30 minutes">
+        <input class="box_length" type="text" id="newExercise-duration" ng-model="$ctrl.newExercise.duration" placeholder="e.g.: 30 minutes">
       </div>
       <div>
         <label for="newExercise-feeling">Feeling:</label>
-        <input type="text" id="newExercise-feeling" ng-model="$ctrl.newExercise.feeling" placeholder="How were you feeling afterwards?">
+        <input class="box_length" type="text" id="newExercise-feeling" ng-model="$ctrl.newExercise.feeling" placeholder="How were you feeling afterwards?">
       </div>
       <br>
       <div>

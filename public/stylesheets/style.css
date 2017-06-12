@@ -53,6 +53,12 @@ nav{
   margin: 15px;
 }
 
+.box_length {
+  width: 350px;
+  height: 30px;
+  border-color: orange;
+}
+
 .food_img{
 background-image: url("http://nourishinglab.com/wp-content/uploads/2015/03/Dollarphotoclub_77649941-e1432313892793.jpg");
 color: white;
