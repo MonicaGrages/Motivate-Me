@@ -1,9 +1,9 @@
 # Motivate Me
 
-### Motivate Me is a social platform for users to provide encouragement to one another in their healthy lifestyle journeys
+### Motivate Me is a social platform where users can provide encouragement to one another in their healthy lifestyle journeys
 ### [Try it here](https://motivate-me-project.herokuapp.com/)
 
-### This MEAN stack application was built by Yeni Nomezqui, William Raush, and Monica Grages for our Web Development Immersive class at General Assembly.
+### This MEAN stack application was built by [Yeni Nomezqui](https://github.com/Rolita1007), [William Raush](https://github.com/WilliamRausch), and [Monica Grages](https://github.com/MonicaGrages) for our Web Development Immersive class at General Assembly.
 #### Technologies utilized in this project:
 * Node/Express
 * Mongo/Mongoose
@@ -12,11 +12,9 @@
 * CSS
 
 #### In version 2, we plan to incorporate:
-* nutrition information from the [USDA Food Composition Databases API](https://ndb.nal.usda.gov/ndb/doc/)
-* login authentication
-* notification when foods are about to expire (instead of having already expired)
-* graphical representation of the distribution of food groups in the user's pantry
-* user photo upload capability
+* User ability to save/share favorite motivational quotes
+* Post "likes"
+* Calorie needs calculator model
 
 #### [Click here to see the Trello board for this project](https://trello.com/b/FKiU5kU0/wdi-project-3)
 
