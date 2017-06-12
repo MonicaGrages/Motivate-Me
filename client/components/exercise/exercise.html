@@ -1,7 +1,7 @@
 <h1>Let's Motivate <span class="red">O</span><span class="orange">n</span><span class="green">e</span> Another to Exercise</h1>
 
 <div class="nav_top">
-  <h2>Exercise</h2>
+  <h2 class="exercise">Exercise</h2>
   <button class="new_post_button" ng-click='$ctrl.addingNew=true'>Add a new exercise post</button>
 </div>
 
@@ -22,7 +22,6 @@
         <label for="newExercise-feeling">Feeling:</label>
         <input type="text" id="newExercise-feeling" ng-model="$ctrl.newExercise.feeling" placeholder="How were you feeling afterwards?">
       </div>
-      <br>
       <br>
       <div>
         <input class="submit_button" type="submit" value="Submit">

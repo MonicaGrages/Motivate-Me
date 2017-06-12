@@ -7,10 +7,8 @@ body {
 a {
   color:black;
   text-decoration:none;
-
   font-style:none;
 }
-
 
 .getMotivatedLink {
   font-size: 100px;
@@ -20,12 +18,12 @@ a {
   margin-right:auto;
   text-decoration:none;
   text-align:center;
-
 }
 .getMotivatedLink:hover {
-  color:grey;
-  text-decoration:underline;
-  }
+  color: orange;
+  text-decoration: underline;
+}
+
 nav{
  display:flex;
  justify-content: space-around;
@@ -34,13 +32,13 @@ nav{
  text-decoration:none;
 }
 
- .EmLink:hover{
-  color:grey;
-   text-decoration:underline;
+.EmLink:hover{
+  color: orange;
+  text-decoration: underline;
 }
 .MMLink:hover{
-  color:grey;
-  text-decoration:underline;
+  color: orange;
+  text-decoration: underline;
 }
 
 .index_page_post_container {
@@ -59,6 +57,18 @@ nav{
 background-image: url("http://nourishinglab.com/wp-content/uploads/2015/03/Dollarphotoclub_77649941-e1432313892793.jpg");
 color: white;
 text-align: left;
+}
+
+.show_post_exercise_img{
+  background-image: url("http://i.imgur.com/i6eZtYP.png");
+  text-align: left;
+  color: #000080;
+}
+
+.show_post_food_img{
+  background-image: url("http://nourishinglab.com/wp-content/uploads/2015/03/Dollarphotoclub_77649941-e1432313892793.jpg");
+  color: white;
+  text-align: left;
 }
 
 .exercise_img{
@@ -85,7 +95,6 @@ h1{
   margin: 5%;
 }
 
-
 .nav_top{
   display: flex;
   flex-direction: column;
@@ -95,6 +104,14 @@ h1{
   padding: 15px;
   margin: 15px;
   font-size: 25px;
+}
+
+.exercise:hover{
+  color: orange;
+}
+
+.meals:hover{
+  color: orange;
 }
 
 .new_post_button{
@@ -162,7 +179,6 @@ h2{
   font-family: 'Merienda', cursive;
   color: white;
   text-align: left;
-  background-image: url("http://nourishinglab.com/wp-content/uploads/2015/03/Dollarphotoclub_77649941-e1432313892793.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   width: 85%;
@@ -210,6 +226,7 @@ h2{
   border-style:dashed;
   font-size:35px;
 }
+
 button{
   background-color:orange;
   font-family:'Merienda',cursive;
