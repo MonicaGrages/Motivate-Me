@@ -27,6 +27,7 @@ router.get('/:exerciseId', function(request, response) {
 
 router.post('/', function(request, response) {
   var exercise = new Exercise(request.body);
+  console.log(request.body);
   exercise.save(function(error) {
     if(error) {
       console.log(error);
@@ -46,7 +47,7 @@ router.patch('/', function(request, response) {
       console.log('error while updating exercise: '+error);
       return;
     }
-    response.send(200);
+    response.sendStatus(200);
     console.log(updatedExercise);
   })
 })
@@ -59,7 +60,7 @@ router.delete('/:id', function (request, response) {
       console.log('error while deleteing exercise: '+error);
       return;
     }
-    response.send(200);
+    response.sendStatus(200);
   })
 });
 
