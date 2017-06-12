@@ -22,9 +22,86 @@ a {
   margin: 15px;
 }
 
+h1{
+  font-family: 'Merienda', cursive;
+  text-align: center;
+  font-size: 35px;
+}
+
 .index_page_post_description {
+  display: flex;
+  flex-direction: column;
+  font-size: 35px;
+  font-family: 'Merienda', cursive;
+  color: white;
+  background-image: url("http://nourishinglab.com/wp-content/uploads/2015/03/Dollarphotoclub_77649941-e1432313892793.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 85%;
+  padding: 5%;
+  margin: 5%;
+}
+
+.nav_top{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  font-family: 'Merienda', cursive;
+  padding: 15px;
+  margin: 15px;
   font-size: 25px;
 }
+
+.new_post_button{
+  background-color: orange;
+  font-family: 'Merienda', cursive;
+  font-size: 15px;
+}
+
+.new_post_form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  font-family: 'Merienda', cursive;
+  padding: 15px;
+  margin: 15px;
+  font-size: 25px;
+}
+
+h2{
+  text-decoration: underline;
+}
+
+.submit_button{
+  background-color: orange;
+  font-family: 'Merienda', cursive;
+  font-size: 15px;
+}
+
+.nevermind_button{
+  background-color: orange;
+  font-family: 'Merienda', cursive;
+  font-size: 15px;
+}
+.red{
+  color: red;
+}
+
+.orange{
+  color: orange;
+}
+
+.green{
+  color: green;
+}
+
+.show_post_description {
+  font-size: 45px;
+  font-family: 'Merienda', cursive;
+}
+
 .Button{
   height:100px;
   width:100px;
@@ -33,13 +110,9 @@ a {
   margin-bottom:15px;
   font-family:'Merienda', cursive;
 
-
-
-
-  
 }
 .quoteBox{
-  
+
   height:150px;
   width:300px;
   margin-left:auto;
@@ -49,6 +122,4 @@ a {
   justify-content:center;
   align-items:center;
   font-family:'Merienda',cursive;
-
-
 }
