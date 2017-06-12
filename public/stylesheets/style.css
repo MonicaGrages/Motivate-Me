@@ -195,6 +195,15 @@ h2{
   border: none;
 }
 
+.likes_container {
+  display: flex;
+  align-items: center;
+}
+
+.posted_date {
+  font-size: 12px;
+}
+
 .quoteBox{
   height:400px;
   width:500px;
@@ -215,3 +224,5 @@ button{
   font-family:'Merienda',cursive;
   font-size:15px;
 }
+
+
