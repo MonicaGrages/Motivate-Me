@@ -19,6 +19,7 @@ function ExerciseController($state, ExerciseService) {
       .then(function(response) {
         vm.savedExercises.push(response.data.exercise);
         vm.newExercise = {};
+        vm.addingNew = false;
       })
   }
 
