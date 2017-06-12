@@ -1,19 +1,8 @@
 <h1>Exercise Motivation from {{$ctrl.exerciseToShow.author}}</h1>
 
-<div class="show_post_description">
-  <h4>{{ $ctrl.exerciseToShow.description }}</h4>
-  <br />
-  Duration: {{ $ctrl.exerciseToShow.duration }}
-  <br />
-  Feeling: {{ $ctrl.exerciseToShow.feeling }}
-  <br />
-</div>
+<button class="edit_button" ng-click='$ctrl.editingPost=true'>Edit this post</button>
 
-<button class="submit_button" ng-click='$ctrl.editingPost=true'>Edit this post</button>
-
-<br><br>
-
-<form ng-if="$ctrl.editingPost" ng-submit="$ctrl.editExercise($ctrl.exerciseToEdit._id)">
+<form class="new_post_form" ng-if="$ctrl.editingPost" ng-submit="$ctrl.editExercise($ctrl.exerciseToEdit._id)">
       <div>
         <label for="exerciseToEdit-author">Author:</label>
         <input type="text" id="exerciseToEdit-Author" ng-model="$ctrl.exerciseToShow.author">
@@ -30,12 +19,28 @@
         <label for="exerciseToEdit-feeling">Feeling:</label>
         <input type="text" id="exerciseToEdit-feeling" ng-model="$ctrl.exerciseToShow.feeling">
       </div>
+      <br>
       <div>
         <input class="submit_button" type="submit" value="Submit">
         <button class="nevermind_button" ng-click="$ctrl.editingPost=false">Nevermind</button>
       </div>
     </form>
 
-<button ng-click="$ctrl.deleteExercise($ctrl.exerciseToShow._id)" >Delete this post</button>
 <br>
-<a ui-sref="exercise">Go Back</a>
+
+<div class="show_post_description exercise_img">
+  <h4>{{ $ctrl.exerciseToShow.description }}</h4>
+  <br/>
+  Duration: {{ $ctrl.exerciseToShow.duration }}
+  <br/>
+  Feeling: {{ $ctrl.exerciseToShow.feeling }}
+  <br/>
+</div>
+
+<br><br>
+
+<button class="delete_button" ng-click="$ctrl.deleteExercise($ctrl.exerciseToShow._id)" >Delete this post</button>
+
+<br>
+
+<a class="go_back" ui-sref="exercise">Go Back</a>

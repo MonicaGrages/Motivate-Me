@@ -107,7 +107,7 @@ h1{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: left;
+  text-align: left;
   font-family: 'Merienda', cursive;
   padding: 15px;
   margin: 15px;
@@ -122,12 +122,26 @@ h2{
   background-color: orange;
   font-family: 'Merienda', cursive;
   font-size: 15px;
+  text-align: left;
 }
 
 .nevermind_button{
   background-color: orange;
   font-family: 'Merienda', cursive;
   font-size: 15px;
+}
+
+.edit_button{
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  background-color: orange;
+  font-family: 'Merienda', cursive;
+  font-size: 15px;
+}
+
+.go_back{
+  color: orange;
 }
 .red{
   color: red;
@@ -141,12 +155,13 @@ h2{
   color: green;
 }
 
-.show_post_description {
+.show_post_description{
   display: flex;
   flex-direction: column;
   font-size: 35px;
   font-family: 'Merienda', cursive;
   color: white;
+  text-align: left;
   background-image: url("http://nourishinglab.com/wp-content/uploads/2015/03/Dollarphotoclub_77649941-e1432313892793.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -158,11 +173,10 @@ h2{
 .delete_button{
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: left;
   background-color: orange;
   font-family: 'Merienda', cursive;
   font-size: 15px;
-
 }
 
 .Button{
