@@ -9,9 +9,11 @@ var ExerciseSchema = new Schema({
   description: String,
   duration: String,
   author: String,
-  feeling: String
+  feeling: String,
+  likes: Number
 });
 
+//need to fix this
 ExerciseSchema.pre('save', function(next) {
     now = new Date();
     this.updatedAt = now;

@@ -12,19 +12,22 @@ var exercises = [
     description: "I just walked 3 miles!!",
     duration: "1 hour",
     author: "Yeni",
-    feeling: "Energized"
+    feeling: "Energized",
+    likes: 1
   },
   {
     description: "Cycled the beltline",
     duration: "20 minutes",
     author: "Monica",
-    feeling: "Fast"
+    feeling: "Fast",
+    likes: 3
   },
   {
     description: "Climbed Stone Mountain",
     duration: "90 minutes",
     author: "William",
-    feeling: "On top of the world"
+    feeling: "On top of the world",
+    likes: 2
   }
 ];
 

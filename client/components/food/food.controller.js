@@ -28,6 +28,13 @@ function FoodController($state, FoodService) {
   vm.foodShow = function (foodId) {
     $state.go('foodShow/:foodId', { foodId: foodId });
   }
+
+  // vm.likePost = function(foodId) {
+  //   FoodService.likePost(foodId).
+  //   .then(function(response){
+  //     console.log(response);
+  //   })
+  // }
 }
 
 module.exports = FoodController;

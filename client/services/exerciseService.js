@@ -12,6 +12,7 @@ angular
     self.exerciseShow = exerciseShow;
     self.editExercise = editExercise;
     self.deleteExercise = deleteExercise;
+    self.likePost = likePost;
 
     function getAllExercises(){
       return $http.get('/exercise');
@@ -26,10 +27,16 @@ angular
     }
 
     function editExercise(exerciseToEdit) {
-      return $http.patch('/exercise', exerciseToEdit);
+      return $http.put('/exercise', exerciseToEdit);
     }
 
     function deleteExercise (exerciseIdToDelete) {
       return $http.delete('/exercise/' + exerciseIdToDelete);
+    }
+
+    function likePost (exerciseToLike) {
+      let exerciseId = exerciseToLike._id;
+      let newLikes = exerciseToLike.likes + 1;
+      return $http.patch ('/exercise/'+exerciseId, {likes: newLikes});
     }
   }

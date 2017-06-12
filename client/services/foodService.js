@@ -25,9 +25,11 @@ angular
     function foodShow (id) {
       return $http.get('/food/'+id);
     }
+
     function editFood(foodToEdit) {
       return $http.patch('/food', foodToEdit);
     }
+
     function deleteFood (foodIdToDelete) {
       return $http.delete('/food/' + foodIdToDelete);
     }
