@@ -1,7 +1,3 @@
-The wireframe is for the Motivate Me App
-<img width="620" alt="screen shot 2017-06-11 at 6 51 52 pm" src="https://user-images.githubusercontent.com/22422858/27015226-3458a762-4ed7-11e7-8177-051028313837.png">
-<img width="620" alt="screen shot 2017-06-11 at 6 52 21 pm" src="https://user-images.githubusercontent.com/22422858/27015227-36a0ec14-4ed7-11e7-9a2b-4fb6ed0366c0.png">
-
 # Motivate Me
 
 ### Motivate Me is a social platform for users to provide encouragement to one another in their healthy lifestyle journeys
