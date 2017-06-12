@@ -33,5 +33,6 @@ function uiRouterSetup($stateProvider, $urlRouterProvider) {
       template: '<food-show></food-show>'
     });
 
-  // $urlRouterProvider.otherwise('/');
+  //we probably need this line but i'm not sure why
+  $urlRouterProvider.otherwise('/quotes');
 }
