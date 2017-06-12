@@ -36,8 +36,21 @@ nav{
 
 .index_page_post {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
   margin: 15px;
+}
+
+.food_img{
+background-image: url("http://nourishinglab.com/wp-content/uploads/2015/03/Dollarphotoclub_77649941-e1432313892793.jpg");
+color: white;
+text-align: left;
+}
+
+.exercise_img{
+background-image: url("http://i.imgur.com/fYqpd2j.png");
+text-align: left;
+color: #000080;
 }
 
 h1{
@@ -51,8 +64,6 @@ h1{
   flex-direction: column;
   font-size: 35px;
   font-family: 'Merienda', cursive;
-  color: white;
-  background-image: url("http://nourishinglab.com/wp-content/uploads/2015/03/Dollarphotoclub_77649941-e1432313892793.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   width: 85%;
@@ -117,8 +128,27 @@ h2{
 }
 
 .show_post_description {
-  font-size: 45px;
+  display: flex;
+  flex-direction: column;
+  font-size: 35px;
   font-family: 'Merienda', cursive;
+  color: white;
+  background-image: url("http://nourishinglab.com/wp-content/uploads/2015/03/Dollarphotoclub_77649941-e1432313892793.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 85%;
+  padding: 5%;
+  margin: 5%;
+}
+
+.delete_button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: orange;
+  font-family: 'Merienda', cursive;
+  font-size: 15px;
+
 }
 
 .Button{
@@ -127,37 +157,33 @@ h2{
   margin-left:auto;
   margin-right:auto;
   margin-bottom:15px;
-
-
-
 }
-.quoteBox{
-<<<<<<< HEAD
-  
-  height:400px;
-  width:600px;
-=======
 
+.like_button {
+  font-size: 40px;
+  height: 60px;
+  width: 60px;
+  border-radius: 600px;
+  border: none;
+}
+
+.quoteBox{
   height:400px;
   width:500px;
 
   margin-left:auto;
   margin-right:auto;
   background-color:tan;
-  
+
   justify-content:center;
   align-items:center;
   font-family:'Merienda',cursive;
 
   border-style:dashed;
   font-size:35px;
-
-
-=======
->>>>>>> master
 }
 button{
   background-color:orange;
-   font-family:'Merienda',cursive;
-   font-size:15px;
+  font-family:'Merienda',cursive;
+  font-size:15px;
 }

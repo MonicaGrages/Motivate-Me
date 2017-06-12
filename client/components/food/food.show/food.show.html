@@ -1,6 +1,7 @@
 <h1>Food Motivation from {{$ctrl.foodToShow.author}}</h1>
-<div>
-  <h4 class="show_post_description">{{ $ctrl.foodToShow.description }}</h4>
+
+<div class="show_post_description">
+  <h4>{{ $ctrl.foodToShow.description }}</h4>
   <br />
   Meal: {{ $ctrl.foodToShow.meal }}
   <br />
@@ -8,9 +9,11 @@
   <br />
 </div>
 
-<button ng-click='$ctrl.editingPost=true'>Edit this post</button>
+<button class="submit_button" ng-click='$ctrl.editingPost=true'>Edit this post</button>
+
 <br><br>
-<form ng-if="$ctrl.editingPost" ng-submit="$ctrl.editFood($ctrl.foodToEdit._id)">
+
+<form class="new_post_form" ng-if="$ctrl.editingPost" ng-submit="$ctrl.editFood($ctrl.foodToEdit._id)">
       <div>
         <label for="foodToEdit-author">Author:</label>
         <input type="text" id="foodToEdit-Author" ng-model="$ctrl.foodToShow.author">
@@ -28,9 +31,13 @@
         <input type="text" id="foodToEdit-feeling" ng-model="$ctrl.foodToShow.feeling">
       </div>
       <div>
-        <input type="submit" value="Submit">
-        <button ng-click="$ctrl.editingPost=false">Nevermind</button>
+        <input class="submit_button" type="submit" value="Submit">
+        <button class="nevermind_button" ng-click="$ctrl.editingPost=false">Nevermind</button>
       </div>
 </form>
 
-<button ng-click="$ctrl.deleteFood($ctrl.foodToShow._id)">Delete this post</button>
+<br>
+
+<button class="delete_button" ng-click="$ctrl.deleteFood($ctrl.foodToShow._id)">Delete this post</button>
+<br><br>
+<a ui-sref="food">Go Back</a>

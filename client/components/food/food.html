@@ -1,4 +1,4 @@
-<h1>Let's Motivate One Another to <span class="red">E</span><span class="orange">a</span><span class="green">t</span> Healthy</h1>
+<h1>Let's Motivate <span class="red">O</span><span class="orange">n</span><span class="green">e</span> Another to Eat Healthy</h1>
 
 <div class="nav_top">
   <h2>Meals</h2>
@@ -22,6 +22,8 @@
         <label for="newFood-feeling">Feeling:</label>
         <input type="text" id="newFood-feeling" ng-model="$ctrl.newFood.feeling" placeholder="How were you feeling afterwards?">
       </div>
+      <br>
+      <br>
       <div>
         <input class="submit_button" type="submit" value="Submit">
         <button class ="nevermind_button" ng-click="$ctrl.addingNew=false">Nevermind</button>
@@ -30,8 +32,8 @@
 
 
 <div class= 'index_page_post_container'>
-  <div class='index_page_post' ng-repeat='food in $ctrl.savedFoods'  ng-click="$ctrl.foodShow(food._id)">
-    <span class='index_page_post_description'>{{food.description}}</span>
+  <div class='index_page_post' ng-repeat='food in $ctrl.savedFoods'>
+    <span class='index_page_post_description food_img' ng-click="$ctrl.foodShow(food._id)">{{food.description}}</span>
     <!-- <span>Meal: {{food.meal}}</span>
     <span>Feeling: {{food.feeling}}</span>
     <span>Author: {{food.author}}</span> -->

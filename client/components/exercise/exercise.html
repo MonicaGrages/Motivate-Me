@@ -1,18 +1,11 @@
-<h1>Let's Motivate One Another to Exercise</h1>
+<h1>Let's Motivate <span class="red">O</span><span class="orange">n</span><span class="green">e</span> Another to Exercise</h1>
 
-
-<div class='index_page_post_container'>
-    <div class='index_page_post' ng-repeat='exercise in $ctrl.savedExercises'  ng-click="$ctrl.exerciseShow(exercise._id)">
-      <span class='index_page_post_description'>{{exercise.description}}</span>
-      <span>Duration: {{exercise.duration}}</span>
-      <span>Feeling: {{exercise.feeling}}</span>
-      <span>Author: {{exercise.author}}</span>
-    </div>
+<div class="nav_top">
+  <h2>Exercise</h2>
+  <button class="new_post_button" ng-click='$ctrl.addingNew=true'>Add a new exercise post</button>
 </div>
 
-<button ng-click='$ctrl.addingNew=true'>Add a new exercise post</button>
-
-<form ng-if="$ctrl.addingNew" ng-submit="$ctrl.addExercise()">
+<form class="new_post_form" ng-if="$ctrl.addingNew" ng-submit="$ctrl.addExercise()">
       <div>
         <label for="newExercise-author">Author:</label>
         <input type="text" id="newExercise-Author" ng-model="$ctrl.newExercise.author" placeholder="your name">
@@ -29,8 +22,22 @@
         <label for="newExercise-feeling">Feeling:</label>
         <input type="text" id="newExercise-feeling" ng-model="$ctrl.newExercise.feeling" placeholder="How were you feeling afterwards?">
       </div>
+      <br>
+      <br>
       <div>
-        <input type="submit" value="Submit">
-        <button ng-click="$ctrl.addingNew=false">Nevermind</button>
+        <input class="submit_button" type="submit" value="Submit">
+        <button class ="nevermind_button" ng-click="$ctrl.addingNew=false">Nevermind</button>
       </div>
+      <br>
     </form>
+
+<div class='index_page_post_container'>
+    <div class='index_page_post' ng-repeat='exercise in $ctrl.savedExercises'>
+      <span class='index_page_post_description exercise_img'  ng-click="$ctrl.exerciseShow(exercise._id)">{{exercise.description}}</span>
+      <!-- <span>Duration: {{exercise.duration}}</span>
+      <span>Feeling: {{exercise.feeling}}</span>
+      <span>Author: {{exercise.author}}</span> -->
+      <button class='like_button' ng-click='$ctrl.likePost(exercise._id)'>&#9829;</button><span class='post_likes'>{{exercise.likes}}</span>
+    </div>
+</div>
+

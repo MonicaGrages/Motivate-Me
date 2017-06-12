@@ -9,7 +9,8 @@ var ExerciseSchema = new Schema({
   description: String,
   duration: String,
   author: String,
-  feeling: String
+  feeling: String,
+  likes: Number
 });
 
 ExerciseSchema.pre('save', function(next) {

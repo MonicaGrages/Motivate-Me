@@ -1,3 +1,4 @@
+//we need to require all of the dependencies listed in our package.json
 require('dotenv').config();
 var express = require('express');
 var path = require('path');
@@ -6,11 +7,11 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+//require mongoose
 var mongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/project_3');
 
-var index = require('./routes/index');
-var users = require('./routes/users');
+
 //require the backend router in exercise.js
 var exercise = require('./routes/exercise');
 var food = require('./routes/food');
@@ -29,8 +30,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', index);
-app.use('/users', users);
+
 //when url is /exercise, use the backend router in exercise.js
 app.use('/exercise', exercise);
 app.use('/food', food);

@@ -11,7 +11,7 @@
 * HTML
 * CSS
 
-#### Because this was the first project we completed using git collaboration, we were very methodical in our approach to dividing responsibilities between our group. We successfully avoided complicated merge conflicts by communicating frequently about what we were working on individually, as well as utilizing driver/navigator pair programming for larger components.
+#### Because this was the first project we completed using git collaboration, we were very methodical in our approach to dividing responsibilities between our group. We successfully avoided difficult merge conflicts by communicating frequently about what we were working on individually, as well as utilizing driver/navigator pair programming for larger components.
 
 #### In version 2, we plan to incorporate:
 * User ability to save/share favorite motivational quotes
