@@ -25,7 +25,8 @@ a {
 
 .index_page_post {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
   margin: 15px;
 }
 
@@ -144,10 +145,16 @@ h2{
   margin-left:auto;
   margin-right:auto;
   margin-bottom:15px;
-
-
-
 }
+
+.like_button {
+  font-size: 40px;
+  height: 60px;
+  width: 60px;
+  border-radius: 600px;
+  border: none;
+}
+
 .quoteBox{
   height:400px;
   width:500px;
