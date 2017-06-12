@@ -20,24 +20,7 @@
 
 ## Wireframes
 
-#### Some Page
-![Home Page Screenshot](https://user-images.githubusercontent.com/22422858/27015226-3458a762-4ed7-11e7-8177-051028313837.png "Home Page Screenshot")
+![Wireframes](https://user-images.githubusercontent.com/22422858/27015226-3458a762-4ed7-11e7-8177-051028313837.png "Project Wireframes")
 
-#### Some Other Page
-![User Show View Screenshot](https://user-images.githubusercontent.com/22422858/27015227-36a0ec14-4ed7-11e7-9a2b-4fb6ed0366c0.png "User Show View Screenshot")
-![User Show View Mockup](http://i.imgur.com/zLfIdi2l.jpg "User Show View Mockup")
+![Wireframes](https://user-images.githubusercontent.com/22422858/27015227-36a0ec14-4ed7-11e7-9a2b-4fb6ed0366c0.png "Project Wireframes")
 
-#### Some Other Page
-![Food Item Show View Screenshot](http://i.imgur.com/3PXFcz6l.png "Food Item Show View Screenshot")
-![Food Item Show View Mockup](http://i.imgur.com/yTL6Qpxl.jpg "Food Item Show View Mockup")
-
-#### Some Other Page
-![New User Form Screenshot](http://i.imgur.com/7Ehn8iIl.png "New User Form Screenshot")
-![New User Form Mockup](http://i.imgur.com/7V7AGY8l.jpg "New User Form Mockup")
-
-#### Some Other Page
-![Mobile View Screenshot](http://i.imgur.com/2i5OMXNl.png "Mobile View Screenshot")
-
-
-## Entity Relationship Diagram
-![Entity Relationship Diagram](http://i.imgur.com/2CGFz4X.jpg "Entity Relationship Diagram")
