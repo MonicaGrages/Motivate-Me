@@ -36,7 +36,9 @@
       <!-- <span>Duration: {{exercise.duration}}</span>
       <span>Feeling: {{exercise.feeling}}</span>
       <span>Author: {{exercise.author}}</span> -->
-      <button class='like_button' ng-click='$ctrl.likePost(exercise)'>&#9829;</button><span ng-if='exercise.likes' class='post_likes'>+{{exercise.likes}}</span>
+      </div class='likes_and_date'>
+        <div><button class='like_button' ng-click='$ctrl.likePost(exercise)'>&#9829;</button><span ng-if='exercise.likes' class='post_likes'>+{{exercise.likes}}</span></div>
+        <p>{{exercise.postedAt | date}}</p>
     </div>
 </div>
 
