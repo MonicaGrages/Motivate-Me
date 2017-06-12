@@ -11,19 +11,22 @@ var foods = [
     description: "Grilled chicken with pasta and green peas!!",
     meal: "40 minutes",
     author: "Yeni",
-    feeling: "Fantaboulus"
+    feeling: "Fantaboulus",
+    likes: 0
   },
   {
     description: "Mahi mahi with asparagus",
     meal: "20 minutes",
     author: "Monica",
-    feeling: "Strong"
+    feeling: "Strong",
+    likes: 0
   },
   {
     description: "Salad with lettuce, red onion, strawberries, and mango ",
     meal: "5 minutes",
     author: "William",
-    feeling: "Lively"
+    feeling: "Lively",
+    likes: 0
   },
 ];
 
