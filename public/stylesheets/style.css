@@ -11,6 +11,7 @@ a {
   font-style:bold;
 }
 
+
 .getMotivatedLink {
   font-size: 100px;
   font-family:'Merienda',cursive;
@@ -19,14 +20,27 @@ a {
   margin-right:auto;
   text-decoration:none;
   text-align:center;
+
 }
+.getMotivatedLink:hover {
+  color:grey;
+  text-decoration:underline;
+  }
 nav{
  display:flex;
  justify-content: space-around;
  color:black;
  font-size:20px;
  text-decoration:none;
+}
 
+ .EmLink:hover{
+  color:grey;
+   text-decoration:underline;
+}
+.MMLink:hover{
+  color:grey;
+  text-decoration:underline;
 }
 
 .index_page_post_container {
