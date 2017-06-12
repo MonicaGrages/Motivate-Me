@@ -14,19 +14,19 @@
 <form class="new_post_form" ng-if="$ctrl.editingPost" ng-submit="$ctrl.editExercise($ctrl.exerciseToEdit._id)">
       <div>
         <label for="exerciseToEdit-author">Author:</label>
-        <input type="text" id="exerciseToEdit-Author" ng-model="$ctrl.exerciseToShow.author">
+        <input class="box_length" type="text" id="exerciseToEdit-Author" ng-model="$ctrl.exerciseToShow.author">
       </div>
       <div>
         <label for="exerciseToEdit-description">Description:</label>
-        <input type="text" id="exerciseToEdit-description" ng-model="$ctrl.exerciseToShow.description" required>
+        <input class="box_length" type="text" id="exerciseToEdit-description" ng-model="$ctrl.exerciseToShow.description" required>
       </div>
       <div>
         <label for="exerciseToEdit-duration">Duration:</label>
-        <input type="text" id="exerciseToEdit-duration" ng-model="$ctrl.exerciseToShow.duration">
+        <input class="box_length" type="text" id="exerciseToEdit-duration" ng-model="$ctrl.exerciseToShow.duration">
       </div>
       <div>
         <label for="exerciseToEdit-feeling">Feeling:</label>
-        <input type="text" id="exerciseToEdit-feeling" ng-model="$ctrl.exerciseToShow.feeling">
+        <input class="box_length" type="text" id="exerciseToEdit-feeling" ng-model="$ctrl.exerciseToShow.feeling">
       </div>
       <br>
       <div>

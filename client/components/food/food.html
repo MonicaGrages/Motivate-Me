@@ -8,19 +8,19 @@
 <form class="new_post_form" ng-if="$ctrl.addingNew" ng-submit="$ctrl.addFood()">
       <div>
         <label for="newFood-author">Author:</label>
-        <input type="text" id="newFood-Author" ng-model="$ctrl.newFood.author" placeholder="your name">
+        <input class="box_length" type="text" id="newFood-Author" ng-model="$ctrl.newFood.author" placeholder="your name">
       </div>
       <div>
         <label for="newFood-description">Description:</label>
-        <input type="text" id="newFood-description" ng-model="$ctrl.newFood.description" placeholder="e.g.: Balsamic tofu" required>
+        <input class="box_length" type="text" id="newFood-description" ng-model="$ctrl.newFood.description" placeholder="e.g.: Balsamic tofu" required>
       </div>
       <div>
         <label for="newFood-meal">Meal:</label>
-        <input type="text" id="newFood-meal" ng-model="$ctrl.newFood.meal" placeholder="e.g.: brunch">
+        <input class="box_length" type="text" id="newFood-meal" ng-model="$ctrl.newFood.meal" placeholder="e.g.: brunch">
       </div>
       <div>
         <label for="newFood-feeling">Feeling:</label>
-        <input type="text" id="newFood-feeling" ng-model="$ctrl.newFood.feeling" placeholder="How were you feeling afterwards?">
+        <input class="box_length" type="text" id="newFood-feeling" ng-model="$ctrl.newFood.feeling" placeholder="How were you feeling afterwards?">
       </div>
       <br>
       <br>
