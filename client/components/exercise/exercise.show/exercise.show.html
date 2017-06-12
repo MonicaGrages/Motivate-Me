@@ -1,5 +1,14 @@
 <h1>Exercise Motivation from {{$ctrl.exerciseToShow.author}}</h1>
 
+<div class="show_post_description show_post_exercise_img">
+  <h4>{{ $ctrl.exerciseToShow.description }}</h4>
+  <br/>
+  Duration: {{ $ctrl.exerciseToShow.duration }}
+  <br/>
+  Feeling: {{ $ctrl.exerciseToShow.feeling }}
+  <br/>
+</div>
+
 <button class="edit_button" ng-click='$ctrl.editingPost=true'>Edit this post</button>
 
 <form class="new_post_form" ng-if="$ctrl.editingPost" ng-submit="$ctrl.editExercise($ctrl.exerciseToEdit._id)">
@@ -25,17 +34,6 @@
         <button class="nevermind_button" ng-click="$ctrl.editingPost=false">Nevermind</button>
       </div>
     </form>
-
-<br>
-
-<div class="show_post_description exercise_img">
-  <h4>{{ $ctrl.exerciseToShow.description }}</h4>
-  <br/>
-  Duration: {{ $ctrl.exerciseToShow.duration }}
-  <br/>
-  Feeling: {{ $ctrl.exerciseToShow.feeling }}
-  <br/>
-</div>
 
 <br><br>
 
