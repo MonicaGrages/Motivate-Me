@@ -3,7 +3,7 @@ var router = express.Router();
 var Food = require('../db/foodschema.js');
 
 
-//backend route to get all the exercise posts from db
+//backend route to get all the food posts from db
 router.get('/', function(request, response) {
   Food.find({}).exec(function(error, food) {
     if(error) {
@@ -37,7 +37,7 @@ router.get('/:foodId', function (request, response) {
   });
 });
 
-router.patch('/', function(request, response) {
+router.put('/', function(request, response) {
   let foodToEdit = request.body;
   console.log(foodToEdit);
   Food.findByIdAndUpdate(foodToEdit._id, foodToEdit, {new: true})
@@ -62,5 +62,20 @@ router.delete('/:id', function (request, response) {
     response.send(200);
   })
 });
+
+//this is for updating the post when the like button is clicked. I feel like this could have been the same function as the put, but I'm not sure how
+router.patch('/:foodId', function (request, response) {
+  let foodId = request.params.foodId;
+  let newLikes = request.body;
+  Food.findByIdAndUpdate(foodId, newLikes, {new : true})
+    .exec(function(error, updatedFood) {
+      if(error) {
+        console.log('error while liking post: '+foodId);
+        return;
+      }
+      response.sendStatus(200);
+      console.log(updatedFood);
+    })
+})
 
 module.exports = router;

@@ -12,7 +12,7 @@ angular
     self.foodShow = foodShow;
     self.editFood = editFood;
     self.deleteFood = deleteFood;
-
+    self.likePost = likePost;
 
     function getAllFoods(){
       return $http.get('/food');
@@ -27,10 +27,16 @@ angular
     }
 
     function editFood(foodToEdit) {
-      return $http.patch('/food', foodToEdit);
+      return $http.put('/food', foodToEdit);
     }
 
     function deleteFood (foodIdToDelete) {
       return $http.delete('/food/' + foodIdToDelete);
+    }
+
+    function likePost (foodToLike) {
+      let foodId = foodToLike._id;
+      let newLikes = foodToLike.likes + 1;
+      return $http.patch ('/food/'+foodId, {likes: newLikes});
     }
   }
