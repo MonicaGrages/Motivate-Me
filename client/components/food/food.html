@@ -13,7 +13,7 @@
         <label for="newFood-description">Description:</label>
         <input class="box_length" type="text" id="newFood-description" ng-model="$ctrl.newFood.description" placeholder="e.g.: Balsamic tofu" name='foodDescription' ng-maxLength='45'required>
           <div class="error-messages" ng-messages="newFood.foodDescription.$error">
-           <div ng-message="required">Desription is required</div>
+           <div ng-message="required">Description is required</div>
            <div ng-message="maxlength">Description is too long</div>
          </div>
       </div>

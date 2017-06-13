@@ -51,6 +51,7 @@ nav{
   flex-direction: row;
   align-items: center;
   margin: 15px;
+  padding-right: 20px;
 }
 
 .box_length {
@@ -181,9 +182,10 @@ h2{
   text-align: left;
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 85%;
-  padding: 5%;
-  margin: 5%;
+/*  width: 85%;*/
+  padding: 35px;
+/*  margin: 5%;*/
+  margin: 35px;
 }
 
 .delete_button{
@@ -309,16 +311,16 @@ button:hover {
   .exercise_img {
     background-image: none;
     border: 4px solid black;
-  }
+
   .flex-container-footer {
     font-size: 35px;
     align-items: center;
     flex-direction: column;
     padding: 0;
   }
-/*  .foot_links {
-    margin: 0;
-    padding: 0;
-  }*/
+
+  .error-messages {
+    font-size: 30px;
+  }
 }
 
