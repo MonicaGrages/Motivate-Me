@@ -237,6 +237,24 @@ button:hover {
   }
   .submit_button {
     font-size: 35px;
+    justify-content: flex-end;
+  }
+
+  .nevermind_button{
+    font-size: 35px;
+    justify-content: flex-end;
+  }
+
+  .new_post_form {
+    width: 76%;
+    font-size: 35px;
+    align-items: flex-end;
+  }
+
+  .box_length{
+    font-size: 25px;
+    display: inline-block;
+    align-items: flex-end;
   }
   .delete_button {
     font-size: 35px;
