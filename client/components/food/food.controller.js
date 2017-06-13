@@ -22,6 +22,7 @@ function FoodController($state, FoodService) {
         console.log(response.data.food);
         vm.savedFoods.push(response.data.food);
         vm.newFood = {};
+        vm.addingNew = false;
       })
   }
 
