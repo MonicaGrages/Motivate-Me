@@ -15,7 +15,7 @@
 
 <br>
 
-<form class="new_post_form" ng-if="$ctrl.editingPost" name='editFood' ng-submit="$ctrl.editFood($ctrl.foodToEdit._id)">
+<form class="new_post_form" ng-if="$ctrl.editingPost" name='editFood' ng-submit="$ctrl.editFood($ctrl.foodToEdit._id)" novalidate="">
       <div>
         <label for="foodToEdit-author">Author:</label>
         <input class="box_length" type="text" id="foodToEdit-Author" ng-model="$ctrl.foodToShow.author">
@@ -38,7 +38,7 @@
       </div>
       <br>
       <div>
-        <input class="submit_button" type="submit" value="Submit">
+        <input class="submit_button" type="submit" value="Submit" ng-disabled='editFood.$invalid'>
         <button class="nevermind_button" ng-click="$ctrl.editingPost=false">Nevermind</button>
       </div>
 </form>

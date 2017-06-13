@@ -4,7 +4,7 @@
   <button class="new_post_button" ng-click='$ctrl.addingNew=true'>Post a new activity</button>
 </div>
 
-<form class="new_post_form" ng-if="$ctrl.addingNew" ng-submit="$ctrl.addExercise()" name="newExercise">
+<form class="new_post_form" ng-if="$ctrl.addingNew" ng-submit="$ctrl.addExercise()" name="newExercise" novalidate>
       <div>
         <label for="newExercise-author">Author:</label>
         <input class="box_length" type="text" id="newExercise-Author" ng-model="$ctrl.newExercise.author" placeholder="your name">
@@ -27,7 +27,7 @@
       </div>
       <br>
       <div>
-        <input class="submit_button" type="submit" value="Submit">
+        <input class="submit_button" type="submit" value="Submit" ng-disabled='newExercise.$invalid'>
         <button class ="nevermind_button" ng-click="$ctrl.addingNew=false">Nevermind</button>
       </div>
     </form>
