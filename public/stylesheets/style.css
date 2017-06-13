@@ -200,15 +200,12 @@ h2{
 }
 
 .quoteBox{
-/*  height:400px;*/
   width:85%;
   margin-left:auto;
   margin-right:auto;
-  /*background-color:tan;*/
   justify-content:center;
   align-items:center;
   font-family:'Merienda',cursive;
-/*  border-style:dashed;*/
   font-size:35px;
 }
 
@@ -223,9 +220,6 @@ button:hover {
 }
 
 @media only screen and (max-width: 1000px) {
-/*  body {
-    background-color: red;
-  }*/
   .nav_link {
     font-size: 40px;
   }
