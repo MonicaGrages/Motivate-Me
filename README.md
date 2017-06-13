@@ -10,17 +10,31 @@
 * AngularJS/JavaScript
 * HTML
 * CSS
+* Mockingbird
 
-#### Because this was the first project we completed using git collaboration, we were very methodical in our approach to dividing responsibilities between our group. We successfully avoided difficult merge conflicts by communicating frequently about what we were working on individually, as well as utilizing driver/navigator pair programming for larger components.
+#### Because this was the first project we completed using git collaboration, we were deliberate in our approach to dividing responsibilities among our team. We successfully avoided difficult merge conflicts by communicating frequently about what we were working on individually, as well as utilizing driver/navigator pair programming for larger project components.
 
 #### In version 2, we plan to incorporate:
 * User ability to save/share favorite motivational quotes
-* Add user ability to upload photos with their posts
+* User ability to upload photos with their posts
 * Calorie needs calculator model
 
-#### [Click here to see the Trello board for this project](https://trello.com/b/FKiU5kU0/wdi-project-3)
+### [Click here to see the user story board for this project](https://trello.com/b/FKiU5kU0/wdi-project-3)
 
 ## Screenshots
+![Index View Screenshot](http://i.imgur.com/ym57QLN.png "Index View Screenshot")
+---
+![Show View Screenshot](http://i.imgur.com/MBz5Jkg.png "Show View Screenshot")
+---
+![Quotes View Screenshot](http://i.imgur.com/OXLE9He.png "Quotes View Screenshot")
+---
+![Form View Screenshot](http://i.imgur.com/RtgIoLI.png "Form View Screenshot")
+---
+
+#### Mobile View
+![Mobile View Screenshot](http://i.imgur.com/fqHqGJ7.png "Mobile View Screenshot")
+---
+![Mobile View Screenshot](http://i.imgur.com/sn3O6KM.png "Mobile View Screenshot")
 
 ## Wireframes
 
