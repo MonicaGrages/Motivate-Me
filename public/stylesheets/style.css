@@ -258,6 +258,7 @@ button:hover {
   }
   .food_img {
     background-image: none;
+    color: #000080;
   }
   .exercise_img {
     background-image: none;
