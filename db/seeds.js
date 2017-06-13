@@ -19,7 +19,8 @@ var exercises = [
     duration: "20 minutes",
     author: "Monica",
     feeling: "Fast",
-    likes: 3
+    likes: 3,
+    postedAt: 2017-06-10
   },
   {
     description: "Climbed Stone Mountain",

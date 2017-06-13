@@ -46,6 +46,16 @@ nav{
   flex-direction: column;
 }
 
+.sort_buttons_container {
+  align-self: flex-end;
+  margin-right: 20px;
+  font-size: 12px;
+}
+
+.sort_buttons:hover {
+  text-decoration: underline;
+}
+
 .index_page_post {
   display: flex;
   flex-direction: row;
@@ -321,6 +331,11 @@ button:hover {
 
   .error-messages {
     font-size: 30px;
+  }
+  .sort_buttons_container {
+    margin: 0;
+    font-size: 30px;
+    align-self: center;
   }
 }
 

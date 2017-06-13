@@ -5,40 +5,41 @@
 </div>
 
 <form class="new_post_form" ng-if="$ctrl.addingNew" ng-submit="$ctrl.addExercise()" name="newExercise" novalidate>
-      <div>
-        <label for="newExercise-author">Author:</label>
-        <input class="box_length" type="text" id="newExercise-Author" ng-model="$ctrl.newExercise.author" placeholder="your name">
-      </div>
-      <div>
-        <label for="newExercise-description">Description:</label>
-        <input class="box_length" type="text" id="newExercise-description" ng-model="$ctrl.newExercise.description" name="exerciseDescription" placeholder="e.g.: Walked a mile!" ng-maxlength="45" required>
-          <div class="error-messages" ng-messages="newExercise.exerciseDescription.$error">
-           <div ng-message="required">Description is required</div>
-           <div ng-message="maxlength">Description is too long</div>
-         </div>
-      </div>
-      <div>
-        <label for="newExercise-duration">Duration:</label>
-        <input class="box_length" type="text" id="newExercise-duration" ng-model="$ctrl.newExercise.duration" placeholder="e.g.: 30 minutes">
-      </div>
-      <div>
-        <label for="newExercise-feeling">Feeling:</label>
-        <input class="box_length" type="text" id="newExercise-feeling" ng-model="$ctrl.newExercise.feeling" placeholder="How were you feeling afterwards?">
-      </div>
-      <br>
-      <div>
-        <input class="submit_button" type="submit" value="Submit" ng-disabled='newExercise.$invalid'>
-        <button class ="nevermind_button" ng-click="$ctrl.addingNew=false">Nevermind</button>
-      </div>
-    </form>
+  <div>
+    <label for="newExercise-author">Author:</label>
+    <input class="box_length" type="text" id="newExercise-Author" ng-model="$ctrl.newExercise.author" placeholder="your name">
+  </div>
+  <div>
+    <label for="newExercise-description">Description:</label>
+    <input class="box_length" type="text" id="newExercise-description" ng-model="$ctrl.newExercise.description" name="exerciseDescription" placeholder="e.g.: Walked a mile!" ng-maxlength="45" required>
+      <div class="error-messages" ng-messages="newExercise.exerciseDescription.$error">
+       <div ng-message="required">Description is required</div>
+       <div ng-message="maxlength">Description is too long</div>
+     </div>
+  </div>
+  <div>
+    <label for="newExercise-duration">Duration:</label>
+    <input class="box_length" type="text" id="newExercise-duration" ng-model="$ctrl.newExercise.duration" placeholder="e.g.: 30 minutes">
+  </div>
+  <div>
+    <label for="newExercise-feeling">Feeling:</label>
+    <input class="box_length" type="text" id="newExercise-feeling" ng-model="$ctrl.newExercise.feeling" placeholder="How were you feeling afterwards?">
+  </div>
+  <br>
+  <div>
+    <input class="submit_button" type="submit" value="Submit" ng-disabled='newExercise.$invalid'>
+    <button class ="nevermind_button" ng-click="$ctrl.addingNew=false">Nevermind</button>
+  </div>
+</form>
 
 <div class='index_page_post_container'>
-    <div class='index_page_post' ng-repeat="exercise in $ctrl.savedExercises | orderBy: '-likes'">
-      <span class='index_page_post_description exercise_img'  ng-click="$ctrl.exerciseShow(exercise._id)">{{exercise.description}}</span>
-      <div class='likes_and_date'>
-        <div class='likes_container'><button class='like_button' ng-click='$ctrl.likePost(exercise)'>&#9829;</button><span class='post_likes'>+{{exercise.likes}}</span></div>
-        <p class='posted_date'>{{exercise.postedAt | date}}</p>
-      </div>
+  <div class='sort_buttons_container'><a ng-click="$ctrl.sortByPicker('likes')" class='sort_buttons'>Top Posts</a><span> | </span><a ng-click="$ctrl.sortByPicker('postedAt')" class='sort_buttons'>Most Recent</a></div>
+  <div class='index_page_post' ng-repeat="exercise in $ctrl.savedExercises | orderBy: $ctrl.sort ">
+    <span class='index_page_post_description exercise_img'  ng-click="$ctrl.exerciseShow(exercise._id)">{{exercise.description}}</span>
+    <div class='likes_and_date'>
+      <div class='likes_container'><button class='like_button' ng-click='$ctrl.likePost(exercise)'>&#9829;</button><span class='post_likes'>+{{exercise.likes}}</span></div>
+      <p class='posted_date'>{{exercise.postedAt | date}}</p>
     </div>
+  </div>
 </div>
 
