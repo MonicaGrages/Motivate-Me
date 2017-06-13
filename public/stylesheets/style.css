@@ -256,5 +256,11 @@ button:hover {
   .go_back {
     font-size: 40px;
   }
+  .food_img {
+    background-image: none;
+  }
+  .exercise_img {
+    background-image: none;
+  }
 }
 
