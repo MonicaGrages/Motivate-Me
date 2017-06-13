@@ -19,6 +19,7 @@ a {
   text-decoration:none;
   text-align:center;
 }
+
 .getMotivatedLink:hover {
   color: orange;
   text-decoration: underline;
@@ -148,12 +149,6 @@ h2{
   font-family: 'Merienda', cursive;
   font-size: 15px;
   text-align: left;
-}
-
-.nevermind_button{
-  background-color: orange;
-  font-family: 'Merienda', cursive;
-  font-size: 15px;
 }
 
 .edit_button{
