@@ -311,6 +311,7 @@ button:hover {
   .exercise_img {
     background-image: none;
     border: 4px solid black;
+  }
 
   .flex-container-footer {
     font-size: 35px;
