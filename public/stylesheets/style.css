@@ -266,13 +266,16 @@ button:hover {
   .nav_link {
     font-size: 40px;
   }
+
   .nav_top {
     justify-content: center;
     padding: 15px;
   }
+
   button {
     font-size: 35px;
   }
+
   .submit_button {
     font-size: 35px;
     justify-content: flex-end;
@@ -294,30 +297,38 @@ button:hover {
     display: inline-block;
     align-items: flex-end;
   }
+
   .delete_button {
     font-size: 35px;
   }
+
   .post_likes{
     font-size: 25px;
   }
+
   .posted_date {
     font-size: 25px;
   }
+
   .index_page_post_description {
     width: 60%;
     font-size: 40px;
   }
+
   .quoteBox {
     font-size: 60px;
   }
+
   .go_back {
     font-size: 40px;
   }
+
   .food_img {
     background-image: none;
     color: #000080;
     border: 4px solid black;
   }
+
   .exercise_img {
     background-image: none;
     border: 4px solid black;
@@ -333,6 +344,7 @@ button:hover {
   .error-messages {
     font-size: 30px;
   }
+
   .sort_buttons_container {
     margin: 0;
     font-size: 30px;
