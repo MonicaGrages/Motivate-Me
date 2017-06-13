@@ -191,6 +191,7 @@ h2{
 .likes_container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .posted_date {
@@ -225,19 +226,26 @@ button:hover {
     background-color: red;
   }*/
   .nav_link {
-    font-size: 35px;
+    font-size: 40px;
   }
   .nav_top {
     justify-content: center;
   }
   button {
-    font-size: 30px;
+    font-size: 35px;
   }
   .post_likes{
     font-size: 25px;
   }
   .posted_date {
-    font-size: 20px;
+    font-size: 25px;
+  }
+  .index_page_post_description {
+    width: 60%;
+    font-size: 40px;
+  }
+  .quoteBox {
+    font-size: 60px;
   }
 }
 
