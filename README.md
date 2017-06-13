@@ -21,6 +21,15 @@
 #### [Click here to see the Trello board for this project](https://trello.com/b/FKiU5kU0/wdi-project-3)
 
 ## Screenshots
+![Index Page Screenshot](http://i.imgur.com/ym57QLN.png "Index Page Screenshot")
+
+![Show Page Screenshot](http://i.imgur.com/efTWtTD.png "Show Page Screenshot")
+
+
+
+#### Mobile View
+![Mobile View Screenshot](http://i.imgur.com/fqHqGJ7.png "Mobile View Screenshot")
+![Mobile View Screenshot](http://i.imgur.com/sn3O6KM.png "Mobile View Screenshot")
 
 ## Wireframes
 
