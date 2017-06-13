@@ -114,20 +114,6 @@ h1{
   font-size: 25px;
 }
 
-.exercise:hover{
-  color: orange;
-}
-
-.meals:hover{
-  color: orange;
-}
-
-.new_post_button{
-  background-color: orange;
-  font-family: 'Merienda', cursive;
-  font-size: 15px;
-}
-
 .new_post_form{
   display: flex;
   flex-direction: column;
@@ -150,24 +136,22 @@ h2{
   text-align: left;
 }
 
-.nevermind_button{
-  background-color: orange;
-  font-family: 'Merienda', cursive;
-  font-size: 15px;
-}
-
 .edit_button{
   display: flex;
   flex-direction: row;
   align-items: left;
-  background-color: orange;
-  font-family: 'Merienda', cursive;
-  font-size: 15px;
 }
 
 .go_back{
   color: orange;
+  font-size: 20px;
 }
+
+.go_back:hover {
+  text-decoration: underline;
+  color: black;
+}
+
 .red{
   color: red;
 }
@@ -203,20 +187,11 @@ h2{
   font-size: 15px;
 }
 
-.Button{
-  height:100px;
-  width:100px;
-  margin-left:auto;
-  margin-right:auto;
-  margin-bottom:15px;
-}
-
 .like_button {
   font-size: 40px;
   height: 60px;
   width: 60px;
   border-radius: 600px;
-  border: none;
 }
 
 .likes_container {
@@ -245,6 +220,10 @@ button{
   background-color:orange;
   font-family:'Merienda',cursive;
   font-size:15px;
+}
+
+button:hover {
+  border-color: black;
 }
 
 
