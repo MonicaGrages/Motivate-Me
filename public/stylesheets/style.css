@@ -140,6 +140,11 @@ h2{
   flex-direction: row;
   align-items: left;
 }
+.error-messages{
+  font-size: 10px;
+  color:red;
+  font-family:Helvetica;
+}
 
 .go_back{
   color: orange;
