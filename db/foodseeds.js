@@ -30,7 +30,6 @@ var foods = [
   },
 ];
 
-
 //first empty any existing db data
 Food.remove({})
   .then(function(){

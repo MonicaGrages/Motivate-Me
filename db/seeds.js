@@ -1,4 +1,3 @@
-
 var mongoose = require('mongoose');
 //require the schema for our resources
 var Exercise = require('./schema.js');
@@ -31,7 +30,6 @@ var exercises = [
   }
 ];
 
-
 //first empty any existing db data
 Exercise.remove({})
   .then(function(){
@@ -47,5 +45,3 @@ Exercise.remove({})
       console.log('Mongoose connection disconnected');
     });
   });
-
-

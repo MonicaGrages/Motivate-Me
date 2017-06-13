@@ -1,6 +1,5 @@
 FoodController.$inject = ['$state', 'FoodService'];
 
-
 //food controllers
 function FoodController($state, FoodService) {
   let vm = this;
@@ -22,6 +21,7 @@ function FoodController($state, FoodService) {
         console.log(response.data.food);
         vm.savedFoods.push(response.data.food);
         vm.newFood = {};
+        vm.addingNew = false;
       })
   }
 
@@ -35,12 +35,7 @@ function FoodController($state, FoodService) {
         foodToLike.likes +=1;
       })
   }
-  // vm.likePost = function(foodId) {
-  //   FoodService.likePost(foodId).
-  //   .then(function(response){
-  //     console.log(response);
-  //   })
-  // }
+
 }
 
 module.exports = FoodController;

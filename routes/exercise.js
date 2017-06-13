@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 var Exercise = require('../db/schema.js');
 
-
 //backend route to get all the exercise posts from db
 router.get('/', function(request, response) {
   Exercise.find({}).exec(function(error, exercise) {
@@ -14,6 +13,7 @@ router.get('/', function(request, response) {
   })
 });
 
+//get one exercise post by ID - for show page
 router.get('/:exerciseId', function(request, response) {
   var exerciseId = request.params.exerciseId;
   Exercise.findById(exerciseId, function (error, exerciseToShow) {
@@ -25,6 +25,7 @@ router.get('/:exerciseId', function(request, response) {
   })
 })
 
+//post a new activity
 router.post('/', function(request, response) {
   var exercise = new Exercise(request.body);
   console.log(request.body);
@@ -37,7 +38,7 @@ router.post('/', function(request, response) {
   })
 })
 
-
+//update an activity post
 router.put('/', function(request, response) {
   let exerciseToEdit = request.body;
   console.log(exerciseToEdit);
@@ -77,6 +78,5 @@ router.patch('/:exerciseId', function (request, response) {
       response.sendStatus(200);
     })
 })
-
 
 module.exports = router;

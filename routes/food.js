@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 var Food = require('../db/foodschema.js');
 
-
 //backend route to get all the food posts from db
 router.get('/', function(request, response) {
   Food.find({}).exec(function(error, food) {
