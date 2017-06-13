@@ -4,14 +4,19 @@
   <button class="new_post_button" ng-click='$ctrl.addingNew=true'>Post a new activity</button>
 </div>
 
-<form class="new_post_form" ng-if="$ctrl.addingNew" ng-submit="$ctrl.addExercise()">
+<form class="new_post_form" ng-if="$ctrl.addingNew" ng-submit="$ctrl.addExercise()" name="newExercise">
       <div>
         <label for="newExercise-author">Author:</label>
         <input class="box_length" type="text" id="newExercise-Author" ng-model="$ctrl.newExercise.author" placeholder="your name">
       </div>
       <div>
         <label for="newExercise-description">Description:</label>
-        <input class="box_length" type="text" id="newExercise-description" ng-model="$ctrl.newExercise.description" placeholder="e.g.: Walked a mile!" required>
+        <input class="box_length" type="text" id="newExercise-description" ng-model="$ctrl.newExercise.description" name="exerciseDescription" placeholder="e.g.: Walked a mile!" ng-maxlength="45" required>
+          <div class="error-messages" ng-messages="newExercise.exerciseDescription.$error">
+           <div ng-message="required">Desription is required</div>
+           <div ng-message="minlength">Description is too short</div>
+           <div ng-message="maxlength">Description is too long</div>
+         </div>
       </div>
       <div>
         <label for="newExercise-duration">Duration:</label>

@@ -4,14 +4,18 @@
   <button class="new_post_button" ng-click='$ctrl.addingNew=true'>Post a Motivating Meal</button>
 </div>
 
-<form class="new_post_form" ng-if="$ctrl.addingNew" ng-submit="$ctrl.addFood()">
+<form class="new_post_form" ng-if="$ctrl.addingNew" ng-submit="$ctrl.addFood()" name='newFood'>
       <div>
         <label for="newFood-author">Author:</label>
         <input class="box_length" type="text" id="newFood-Author" ng-model="$ctrl.newFood.author" placeholder="your name">
       </div>
       <div>
         <label for="newFood-description">Description:</label>
-        <input class="box_length" type="text" id="newFood-description" ng-model="$ctrl.newFood.description" placeholder="e.g.: Balsamic tofu" required>
+        <input class="box_length" type="text" id="newFood-description" ng-model="$ctrl.newFood.description" placeholder="e.g.: Balsamic tofu" name='foodDescription' ng-maxLength='45'required>
+          <div class="error-messages" ng-messages="newFood.foodDescription.$error">
+           <div ng-message="required">Desription is required</div>
+           <div ng-message="maxlength">Description is too long</div>
+         </div>
       </div>
       <div>
         <label for="newFood-meal">Meal Prep Time:</label>
