@@ -12,7 +12,7 @@ var foods = [
     description: "Grilled chicken with pasta and green peas!!",
     meal: "40 minutes",
     author: "Yeni",
-    feeling: "Fantaboulus",
+    feeling: "Fantabulous",
     likes: 0
   },
   {

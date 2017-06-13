@@ -3,7 +3,7 @@
 ### Motivate Me is a social platform where users can provide encouragement to one another in their healthy lifestyle journeys
 ### [Click here to try the app deployed to Heroku](https://motivate-me-project.herokuapp.com/)
 
-### This MEAN stack application was built by [Yeni Nomezqui](https://github.com/Rolita1007), [William Raush](https://github.com/WilliamRausch), and [Monica Grages](https://github.com/MonicaGrages) for our Web Development Immersive class at General Assembly.
+### This MEAN stack application was built by [Yeni Nomezqui](https://github.com/Rolita1007), [William Rausch](https://github.com/WilliamRausch), and [Monica Grages](https://github.com/MonicaGrages) for our Web Development Immersive class at General Assembly.
 #### Technologies utilized in this project:
 * Node/Express
 * Mongo/Mongoose
