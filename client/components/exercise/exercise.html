@@ -14,7 +14,6 @@
         <input class="box_length" type="text" id="newExercise-description" ng-model="$ctrl.newExercise.description" name="exerciseDescription" placeholder="e.g.: Walked a mile!" ng-maxlength="45" required>
           <div class="error-messages" ng-messages="newExercise.exerciseDescription.$error">
            <div ng-message="required">Description is required</div>
-           <div ng-message="minlength">Description is too short</div>
            <div ng-message="maxlength">Description is too long</div>
          </div>
       </div>

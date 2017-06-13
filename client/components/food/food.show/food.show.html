@@ -15,14 +15,18 @@
 
 <br>
 
-<form class="new_post_form" ng-if="$ctrl.editingPost" ng-submit="$ctrl.editFood($ctrl.foodToEdit._id)">
+<form class="new_post_form" ng-if="$ctrl.editingPost" name='editFood' ng-submit="$ctrl.editFood($ctrl.foodToEdit._id)">
       <div>
         <label for="foodToEdit-author">Author:</label>
         <input class="box_length" type="text" id="foodToEdit-Author" ng-model="$ctrl.foodToShow.author">
       </div>
       <div>
         <label for="foodToEdit-description">Description:</label>
-        <input class="box_length"  type="text" id="foodToEdit-description" ng-model="$ctrl.foodToShow.description" required>
+        <input class="box_length"  type="text" id="foodToEdit-description" ng-model="$ctrl.foodToShow.description" ng-maxlength='45' name='foodDescription' required>
+        <div class="error-messages" ng-messages="editFood.foodDescription.$error">
+          <div ng-message="required">Description is required</div>
+          <div ng-message="maxlength">Description is too long</div>
+        </div>
       </div>
       <div>
         <label for="foodToEdit-meal">Meal Prep Time:</label>

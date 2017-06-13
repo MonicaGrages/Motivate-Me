@@ -11,14 +11,18 @@
 
 <button class="edit_button" ng-click='$ctrl.editingPost=true'>Edit this post</button>
 
-<form class="new_post_form" ng-if="$ctrl.editingPost" ng-submit="$ctrl.editExercise($ctrl.exerciseToEdit._id)">
+<form class="new_post_form" ng-if="$ctrl.editingPost" ng-submit="$ctrl.editExercise($ctrl.exerciseToEdit._id)" name="editExercise">
       <div>
         <label for="exerciseToEdit-author">Author:</label>
         <input class="box_length" type="text" id="exerciseToEdit-Author" ng-model="$ctrl.exerciseToShow.author">
       </div>
       <div>
         <label for="exerciseToEdit-description">Description:</label>
-        <input class="box_length" type="text" id="exerciseToEdit-description" ng-model="$ctrl.exerciseToShow.description" required>
+        <input class="box_length" type="text" id="exerciseToEdit-description" ng-model="$ctrl.exerciseToShow.description" name="exerciseDescription" ng-maxlength="45" required>
+        <div class="error-messages" ng-messages="editExercise.exerciseDescription.$error">
+          <div ng-message="required">Description is required</div>
+          <div ng-message="maxlength">Description is too long</div>
+        </div>
       </div>
       <div>
         <label for="exerciseToEdit-duration">Duration:</label>
