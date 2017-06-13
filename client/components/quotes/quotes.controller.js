@@ -1,8 +1,5 @@
-
-
 function QuotesController(){
 	let vm=this;
-
 
 var quotes = [' We are what we repeatedly do. Excellence, therefore, is not an act but a habit.',
 'The best way out is always through.',
@@ -17,12 +14,12 @@ var quotes = [' We are what we repeatedly do. Excellence, therefore, is not an a
 
 vm.generateQuote=generateQuote;
 function generateQuote(){
-
 	vm.generatedQuote='d';
 	var i=Math.floor(Math.random()*quotes.length);
 	vm.generatedQuote=(quotes[i]);
-
 }
 generateQuote();
+
 };
+
 module.exports=QuotesController;
