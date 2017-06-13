@@ -38,10 +38,6 @@ nav{
   color: orange;
   text-decoration: underline;
 }
-.MMLink:hover{
-  color: orange;
-  text-decoration: underline;
-}
 
 .index_page_post_container {
   display: flex;
