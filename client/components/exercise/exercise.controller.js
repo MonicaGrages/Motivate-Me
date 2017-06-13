@@ -35,7 +35,6 @@ function ExerciseController($state, ExerciseService) {
       })
   }
 
-
 }
 
 module.exports = ExerciseController;

@@ -4,7 +4,6 @@ function FoodShowController($state, $stateParams, FoodService) {
 
   var vm = this;
 
-
   vm.foodShow = function () {
     let foodId = $stateParams.foodId;
     FoodService.foodShow(foodId)
