@@ -259,9 +259,11 @@ button:hover {
   .food_img {
     background-image: none;
     color: #000080;
+    border: 3px solid black;
   }
   .exercise_img {
     background-image: none;
+    border: 3px solid black;
   }
 }
 
