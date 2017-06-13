@@ -144,6 +144,11 @@ h2{
   align-items: left;
   margin-left: 70px;
 }
+.error-messages{
+  font-size: 10px;
+  color:red;
+  font-family:Helvetica;
+}
 
 .go_back{
   color: orange;
@@ -246,8 +251,6 @@ footer {
   width: 100%;
   box-sizing: border-box;
   font-family:'Merienda',cursive;
-
-
 }
 
 @media only screen and (max-width: 1000px) {

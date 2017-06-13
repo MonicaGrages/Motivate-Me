@@ -1,7 +1,8 @@
 const angular = require('angular');
 require('angular-ui-router');
+require('angular-messages');
 
-angular.module('MotivateMeApp', ['ui.router'])
+angular.module('MotivateMeApp', ['ui.router','ngMessages'])
   .config(uiRouterSetup);
 
 //This is where we are going to define our UI Router
