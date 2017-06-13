@@ -3,10 +3,12 @@ angular
   .module('MotivateMeApp')
   .service('FoodService', FoodService);
 
+  //we will need to use $http in this service because we are making http calls
   FoodService.$inject = ['$http'];
 
    function FoodService ($http){
     const self = this;
+    //set all functions as a property on the service so we can access them with angular
     self.getAllFoods = getAllFoods;
     self.addFood = addFood;
     self.foodShow = foodShow;

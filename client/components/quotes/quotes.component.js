@@ -4,7 +4,6 @@ const template = require('./quotes.html');
 const component = {
   controller: controller,
   template:template
-  
 };
 
 angular

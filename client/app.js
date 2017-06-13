@@ -9,7 +9,7 @@ angular.module('MotivateMeApp', ['ui.router','ngMessages'])
 uiRouterSetup.$inject = ['$stateProvider', '$urlRouterProvider'];
 
 function uiRouterSetup($stateProvider, $urlRouterProvider) {
-  //this is stating the different components
+  //this is setting up each of the different states of our app
   $stateProvider
     .state('quotes', {
       url: '/quotes',
@@ -34,6 +34,6 @@ function uiRouterSetup($stateProvider, $urlRouterProvider) {
       template: '<food-show></food-show>'
     });
 
-  //we probably need this line but i'm not sure why
+//default to the quotes state
   $urlRouterProvider.otherwise('/quotes');
 }

@@ -11,7 +11,6 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/project_3');
 
-
 //require the backend router in exercise.js
 var exercise = require('./routes/exercise');
 var food = require('./routes/food');
@@ -29,7 +28,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
 
 //when url is /exercise, use the backend router in exercise.js
 app.use('/exercise', exercise);

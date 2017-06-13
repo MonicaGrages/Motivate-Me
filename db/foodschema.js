@@ -1,8 +1,10 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
+//use global promises
 mongoose.Promise = global.Promise;
 
+//define what we want food posts to look like
 var FoodSchema = new Schema({
   description: String,
   meal: String,

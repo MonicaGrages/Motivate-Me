@@ -29,6 +29,7 @@ function FoodShowController($state, $stateParams, FoodService) {
     FoodService.deleteFood(foodIdToDelete)
       .then(function (response) {
         console.log(response);
+        //redirect to the index page state after deleting - not sure if this is the correct way to do this?
         $state.go('food');
       })
   }

@@ -25,6 +25,7 @@ function FoodController($state, FoodService) {
       })
   }
 
+  //redirect to the show page state for meal posts
   vm.foodShow = function (foodId) {
     $state.go('foodShow/:foodId', { foodId: foodId });
   }

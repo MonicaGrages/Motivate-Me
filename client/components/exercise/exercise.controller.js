@@ -23,6 +23,7 @@ function ExerciseController($state, ExerciseService) {
       })
   }
 
+  //redirect to the show page state for activity posts
   vm.exerciseShow = function (exerciseId) {
     $state.go('exerciseShow/:exerciseId', { exerciseId: exerciseId });
   }

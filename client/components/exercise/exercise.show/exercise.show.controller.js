@@ -27,6 +27,7 @@ vm.deleteExercise = function (exerciseIdToDelete) {
     ExerciseService.deleteExercise(exerciseIdToDelete)
       .then(function (response) {
         console.log(response);
+        //redirect to the index page state after deleting - not sure if this is the correct way to do this?
         $state.go('exercise');
       })
   }

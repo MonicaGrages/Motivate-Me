@@ -3,6 +3,7 @@ var Schema = mongoose.Schema;
 
 mongoose.Promise = global.Promise;
 
+//define what we want activity posts to look like
 var ExerciseSchema = new Schema({
   description: {type: String, required: true},
   duration: String,
