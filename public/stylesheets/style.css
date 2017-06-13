@@ -234,6 +234,12 @@ button:hover {
   button {
     font-size: 35px;
   }
+  .submit_button {
+    font-size: 35px;
+  }
+  .delete_button {
+    font-size: 35px;
+  }
   .post_likes{
     font-size: 25px;
   }
@@ -246,6 +252,9 @@ button:hover {
   }
   .quoteBox {
     font-size: 60px;
+  }
+  .go_back {
+    font-size: 40px;
   }
 }
 
