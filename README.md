@@ -41,4 +41,4 @@
 ![Wireframes](https://user-images.githubusercontent.com/22422858/27015227-36a0ec14-4ed7-11e7-9a2b-4fb6ed0366c0.png "Project Wireframes")
 ---
 ## Entity Relationship Diagram
-![ERD](http://i.imgur.com/2CGFz4X.jpg "ERD")
+![ERD](http://i.imgur.com/2CGFz4Xl.jpg "ERD")
