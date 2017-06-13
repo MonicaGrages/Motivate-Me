@@ -34,7 +34,7 @@ nav{
  text-decoration:none;
 }
 
-.EmLink:hover{
+.nav_link:hover{
   color: orange;
   text-decoration: underline;
 }
@@ -226,4 +226,8 @@ button:hover {
   border-color: black;
 }
 
+@media only screen and (max-width: 1000px) {
+
+
+}
 
