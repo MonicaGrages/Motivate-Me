@@ -161,6 +161,7 @@ h2{
 .show_post_description{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   font-size: 35px;
   font-family: 'Merienda', cursive;
   color: white;
