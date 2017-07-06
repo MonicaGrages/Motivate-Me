@@ -34,13 +34,14 @@
 </form>
 
 <div class='index_page_post_container'>
-    <div class='index_page_post' ng-repeat="food in $ctrl.savedFoods | orderBy: '-likes'">
-      <span class='index_page_post_description food_img'  ng-click="$ctrl.foodShow(food._id)">{{food.description}}</span>
-      <div class='likes_and_date'>
-        <div class='likes_container'><button class='like_button' ng-click='$ctrl.likePost(food)'>&#9829;</button><span class='post_likes'>+{{food.likes}}</span></div>
-        <p class='posted_date'>{{food.postedAt | date}}</p>
-      </div>
+  <div class='sort_buttons_container'><a ng-click="$ctrl.sortByPicker('likes')" class='sort_buttons'>Top Posts</a><span> | </span><a ng-click="$ctrl.sortByPicker('postedAt')" class='sort_buttons'>Most Recent</a></div>
+  <div class='index_page_post' ng-repeat="food in $ctrl.savedFoods | orderBy: $ctrl.sort">
+    <span class='index_page_post_description food_img'  ng-click="$ctrl.foodShow(food._id)">{{food.description}}</span>
+    <div class='likes_and_date'>
+      <div class='likes_container'><button class='like_button' ng-click='$ctrl.likePost(food)'>&#9829;</button><span class='post_likes'>+{{food.likes}}</span></div>
+      <p class='posted_date'>{{food.postedAt | date}}</p>
     </div>
+  </div>
 </div>
 
 

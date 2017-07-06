@@ -17,8 +17,6 @@ function FoodController($state, FoodService) {
   vm.addFood = function() {
     FoodService.addFood(vm.newFood)
       .then(function(response) {
-        console.log(vm.newFood);
-        console.log(response.data.food);
         vm.savedFoods.push(response.data.food);
         vm.newFood = {};
         vm.addingNew = false;
@@ -35,6 +33,14 @@ function FoodController($state, FoodService) {
       .then(function success (response) {
         foodToLike.likes +=1;
       })
+  }
+
+  vm.sortByPicker = function (thingToSortBy) {
+    if (thingToSortBy === 'likes') {
+      vm.sort = '-likes';
+    } else if (thingToSortBy === 'postedAt') {
+      vm.sort = '-postedAt';
+    }
   }
 
 }

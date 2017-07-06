@@ -36,7 +36,6 @@ function ExerciseController($state, ExerciseService) {
   }
 
   vm.sortByPicker = function (thingToSortBy) {
-    console.log('hello');
     if (thingToSortBy === 'likes') {
       vm.sort = '-likes';
     } else if (thingToSortBy === 'postedAt') {
